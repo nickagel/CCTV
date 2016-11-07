@@ -6,4 +6,5 @@ mongoose.connect(connectionString, function () {
   mongoose.Promise = global.Promise;
   console.log('CCTV-API connected to MongoDb')
 })
+
 module.exports = mongoose

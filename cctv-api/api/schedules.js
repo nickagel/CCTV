@@ -7,7 +7,11 @@ router.get("/schedules", function (req, res, next) {
     var EST = moment.tz("America/New_York").format()
     var ESTstring = EST.substring(0,10)
     Schedule.find({"date":ESTstring}, function(err, schedules){
-        res.send({"schedules": schedules})
+        if(err) {
+            res.status(404)
+        }
+        
+        res.status(200).json({"schedules": schedules})
     })
 })
 

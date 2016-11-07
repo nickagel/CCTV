@@ -27,7 +27,11 @@ router.get("/initialize", function(req, res, next){
             var query = Archive.find({}).sort({airDate: -1}).limit(10)
 
             query.exec(function (err, archives) {
-                callback(null, {"archives":archives})
+                if(err) {
+                    res.status(404)
+                }
+                
+                res.status(200).json(null, {"archives":archives})
             })
         }
     ], function(err, results){
