@@ -31,11 +31,11 @@ router.get("/initialize", function(req, res, next){
                     res.status(404)
                 }
                 
-                res.status(200).json({"archives":archives})
+                callback(null, {"archives":archives})
             })
         }
     ], function(err, results){
-        res.send(JSON.stringify(results))
+        res.status(200).json(results)
     })
 })
 
