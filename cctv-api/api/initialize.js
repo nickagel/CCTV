@@ -31,7 +31,7 @@ router.get("/initialize", function(req, res, next){
                     res.status(404)
                 }
                 
-                res.status(200).json(null, {"archives":archives})
+                res.status(200).json({"archives":archives})
             })
         }
     ], function(err, results){
