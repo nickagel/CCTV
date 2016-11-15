@@ -10,7 +10,7 @@ $ cd CCTV/cctv-api
 $ npm install
 $ node server
 ```
-**NOTE:** Ask admin for cctv-api/config.js 
+**NOTE:** Ask admin for cctv-api/config.json
 
 ### Technology
 
