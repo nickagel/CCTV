@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3F12E0B31DD25DAA00BCA008"
+               BlueprintIdentifier = "3FBB97261DD9038600537C32"
                BuildableName = "cctv-ios.app"
                BlueprintName = "cctv-ios"
                ReferencedContainer = "container:cctv-ios.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3F12E0C71DD25DAA00BCA008"
+               BlueprintIdentifier = "3FBB973A1DD9038600537C32"
                BuildableName = "cctv-iosTests.xctest"
                BlueprintName = "cctv-iosTests"
                ReferencedContainer = "container:cctv-ios.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3F12E0D21DD25DAA00BCA008"
+               BlueprintIdentifier = "3FBB97451DD9038600537C32"
                BuildableName = "cctv-iosUITests.xctest"
                BlueprintName = "cctv-iosUITests"
                ReferencedContainer = "container:cctv-ios.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3F12E0B31DD25DAA00BCA008"
+            BlueprintIdentifier = "3FBB97261DD9038600537C32"
             BuildableName = "cctv-ios.app"
             BlueprintName = "cctv-ios"
             ReferencedContainer = "container:cctv-ios.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3F12E0B31DD25DAA00BCA008"
+            BlueprintIdentifier = "3FBB97261DD9038600537C32"
             BuildableName = "cctv-ios.app"
             BlueprintName = "cctv-ios"
             ReferencedContainer = "container:cctv-ios.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3F12E0B31DD25DAA00BCA008"
+            BlueprintIdentifier = "3FBB97261DD9038600537C32"
             BuildableName = "cctv-ios.app"
             BlueprintName = "cctv-ios"
             ReferencedContainer = "container:cctv-ios.xcodeproj">

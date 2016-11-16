@@ -7,70 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F12E0B81DD25DAA00BCA008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12E0B71DD25DAA00BCA008 /* AppDelegate.swift */; };
-		3F12E0BA1DD25DAA00BCA008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12E0B91DD25DAA00BCA008 /* ViewController.swift */; };
-		3F12E0BF1DD25DAA00BCA008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F12E0BE1DD25DAA00BCA008 /* Assets.xcassets */; };
-		3F12E0C21DD25DAA00BCA008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F12E0C01DD25DAA00BCA008 /* LaunchScreen.storyboard */; };
-		3F12E0CD1DD25DAA00BCA008 /* cctv_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12E0CC1DD25DAA00BCA008 /* cctv_iosTests.swift */; };
-		3F12E0D81DD25DAA00BCA008 /* cctv_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12E0D71DD25DAA00BCA008 /* cctv_iosUITests.swift */; };
-		3F12E0E71DD25DC500BCA008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F12E0E51DD25DC500BCA008 /* Main.storyboard */; };
-		3F12E0E91DD25E3500BCA008 /* archivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12E0E81DD25E3500BCA008 /* archivesViewController.swift */; };
-		3F12E0EB1DD25E4300BCA008 /* schedulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12E0EA1DD25E4300BCA008 /* schedulesViewController.swift */; };
-		3F12E0ED1DD25E5E00BCA008 /* streamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12E0EC1DD25E5E00BCA008 /* streamingViewController.swift */; };
+		3FBB972B1DD9038600537C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB972A1DD9038600537C32 /* AppDelegate.swift */; };
+		3FBB972D1DD9038600537C32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB972C1DD9038600537C32 /* ViewController.swift */; };
+		3FBB97301DD9038600537C32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB972E1DD9038600537C32 /* Main.storyboard */; };
+		3FBB97321DD9038600537C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB97311DD9038600537C32 /* Assets.xcassets */; };
+		3FBB97351DD9038600537C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB97331DD9038600537C32 /* LaunchScreen.storyboard */; };
+		3FBB97401DD9038600537C32 /* cctv_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB973F1DD9038600537C32 /* cctv_iosTests.swift */; };
+		3FBB974B1DD9038600537C32 /* cctv_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB974A1DD9038600537C32 /* cctv_iosUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3F12E0C91DD25DAA00BCA008 /* PBXContainerItemProxy */ = {
+		3FBB973C1DD9038600537C32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3F12E0AC1DD25DAA00BCA008 /* Project object */;
+			containerPortal = 3FBB971F1DD9038600537C32 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3F12E0B31DD25DAA00BCA008;
+			remoteGlobalIDString = 3FBB97261DD9038600537C32;
 			remoteInfo = "cctv-ios";
 		};
-		3F12E0D41DD25DAA00BCA008 /* PBXContainerItemProxy */ = {
+		3FBB97471DD9038600537C32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3F12E0AC1DD25DAA00BCA008 /* Project object */;
+			containerPortal = 3FBB971F1DD9038600537C32 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3F12E0B31DD25DAA00BCA008;
+			remoteGlobalIDString = 3FBB97261DD9038600537C32;
 			remoteInfo = "cctv-ios";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F12E0B41DD25DAA00BCA008 /* cctv-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cctv-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F12E0B71DD25DAA00BCA008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F12E0B91DD25DAA00BCA008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F12E0BE1DD25DAA00BCA008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3F12E0C11DD25DAA00BCA008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3F12E0C31DD25DAA00BCA008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F12E0C81DD25DAA00BCA008 /* cctv-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cctv-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F12E0CC1DD25DAA00BCA008 /* cctv_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cctv_iosTests.swift; sourceTree = "<group>"; };
-		3F12E0CE1DD25DAA00BCA008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F12E0D31DD25DAA00BCA008 /* cctv-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cctv-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F12E0D71DD25DAA00BCA008 /* cctv_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cctv_iosUITests.swift; sourceTree = "<group>"; };
-		3F12E0D91DD25DAA00BCA008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F12E0E61DD25DC500BCA008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../../Desktop/cctv.ios/cctv.ios/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3F12E0E81DD25E3500BCA008 /* archivesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = archivesViewController.swift; sourceTree = "<group>"; };
-		3F12E0EA1DD25E4300BCA008 /* schedulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = schedulesViewController.swift; sourceTree = "<group>"; };
-		3F12E0EC1DD25E5E00BCA008 /* streamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = streamingViewController.swift; sourceTree = "<group>"; };
+		3F7B6E971DD910D900D9303A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3FBB97271DD9038600537C32 /* cctv-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cctv-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBB972A1DD9038600537C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FBB972C1DD9038600537C32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FBB972F1DD9038600537C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FBB97311DD9038600537C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FBB97341DD9038600537C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FBB97361DD9038600537C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBB973B1DD9038600537C32 /* cctv-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cctv-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBB973F1DD9038600537C32 /* cctv_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cctv_iosTests.swift; sourceTree = "<group>"; };
+		3FBB97411DD9038600537C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBB97461DD9038600537C32 /* cctv-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cctv-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBB974A1DD9038600537C32 /* cctv_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cctv_iosUITests.swift; sourceTree = "<group>"; };
+		3FBB974C1DD9038600537C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBB975B1DD90A3E00537C32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3F12E0B11DD25DAA00BCA008 /* Frameworks */ = {
+		3FBB97241DD9038600537C32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F12E0C51DD25DAA00BCA008 /* Frameworks */ = {
+		3FBB97381DD9038600537C32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F12E0D01DD25DAA00BCA008 /* Frameworks */ = {
+		3FBB97431DD9038600537C32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,56 +76,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F12E0AB1DD25DAA00BCA008 = {
+		3FBB971E1DD9038600537C32 = {
 			isa = PBXGroup;
 			children = (
-				3F12E0B61DD25DAA00BCA008 /* cctv-ios */,
-				3F12E0CB1DD25DAA00BCA008 /* cctv-iosTests */,
-				3F12E0D61DD25DAA00BCA008 /* cctv-iosUITests */,
-				3F12E0B51DD25DAA00BCA008 /* Products */,
+				3FBB97291DD9038600537C32 /* cctv-ios */,
+				3FBB973E1DD9038600537C32 /* cctv-iosTests */,
+				3FBB97491DD9038600537C32 /* cctv-iosUITests */,
+				3FBB97281DD9038600537C32 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3F12E0B51DD25DAA00BCA008 /* Products */ = {
+		3FBB97281DD9038600537C32 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F12E0B41DD25DAA00BCA008 /* cctv-ios.app */,
-				3F12E0C81DD25DAA00BCA008 /* cctv-iosTests.xctest */,
-				3F12E0D31DD25DAA00BCA008 /* cctv-iosUITests.xctest */,
+				3FBB97271DD9038600537C32 /* cctv-ios.app */,
+				3FBB973B1DD9038600537C32 /* cctv-iosTests.xctest */,
+				3FBB97461DD9038600537C32 /* cctv-iosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3F12E0B61DD25DAA00BCA008 /* cctv-ios */ = {
+		3FBB97291DD9038600537C32 /* cctv-ios */ = {
 			isa = PBXGroup;
 			children = (
-				3F12E0B71DD25DAA00BCA008 /* AppDelegate.swift */,
-				3F12E0B91DD25DAA00BCA008 /* ViewController.swift */,
-				3F12E0EC1DD25E5E00BCA008 /* streamingViewController.swift */,
-				3F12E0EA1DD25E4300BCA008 /* schedulesViewController.swift */,
-				3F12E0E81DD25E3500BCA008 /* archivesViewController.swift */,
-				3F12E0BE1DD25DAA00BCA008 /* Assets.xcassets */,
-				3F12E0C01DD25DAA00BCA008 /* LaunchScreen.storyboard */,
-				3F12E0E51DD25DC500BCA008 /* Main.storyboard */,
-				3F12E0C31DD25DAA00BCA008 /* Info.plist */,
+				3FBB972A1DD9038600537C32 /* AppDelegate.swift */,
+				3FBB972C1DD9038600537C32 /* ViewController.swift */,
+				3FBB972E1DD9038600537C32 /* Main.storyboard */,
+				3FBB97311DD9038600537C32 /* Assets.xcassets */,
+				3FBB97331DD9038600537C32 /* LaunchScreen.storyboard */,
+				3FBB97361DD9038600537C32 /* Info.plist */,
 			);
 			path = "cctv-ios";
 			sourceTree = "<group>";
 		};
-		3F12E0CB1DD25DAA00BCA008 /* cctv-iosTests */ = {
+		3FBB973E1DD9038600537C32 /* cctv-iosTests */ = {
 			isa = PBXGroup;
 			children = (
-				3F12E0CC1DD25DAA00BCA008 /* cctv_iosTests.swift */,
-				3F12E0CE1DD25DAA00BCA008 /* Info.plist */,
+				3FBB973F1DD9038600537C32 /* cctv_iosTests.swift */,
+				3FBB97411DD9038600537C32 /* Info.plist */,
 			);
 			path = "cctv-iosTests";
 			sourceTree = "<group>";
 		};
-		3F12E0D61DD25DAA00BCA008 /* cctv-iosUITests */ = {
+		3FBB97491DD9038600537C32 /* cctv-iosUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3F12E0D71DD25DAA00BCA008 /* cctv_iosUITests.swift */,
-				3F12E0D91DD25DAA00BCA008 /* Info.plist */,
+				3FBB974A1DD9038600537C32 /* cctv_iosUITests.swift */,
+				3FBB974C1DD9038600537C32 /* Info.plist */,
 			);
 			path = "cctv-iosUITests";
 			sourceTree = "<group>";
@@ -137,13 +130,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3F12E0B31DD25DAA00BCA008 /* cctv-ios */ = {
+		3FBB97261DD9038600537C32 /* cctv-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F12E0DC1DD25DAA00BCA008 /* Build configuration list for PBXNativeTarget "cctv-ios" */;
+			buildConfigurationList = 3FBB974F1DD9038600537C32 /* Build configuration list for PBXNativeTarget "cctv-ios" */;
 			buildPhases = (
-				3F12E0B01DD25DAA00BCA008 /* Sources */,
-				3F12E0B11DD25DAA00BCA008 /* Frameworks */,
-				3F12E0B21DD25DAA00BCA008 /* Resources */,
+				3FBB97231DD9038600537C32 /* Sources */,
+				3FBB97241DD9038600537C32 /* Frameworks */,
+				3FBB97251DD9038600537C32 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -151,69 +144,69 @@
 			);
 			name = "cctv-ios";
 			productName = "cctv-ios";
-			productReference = 3F12E0B41DD25DAA00BCA008 /* cctv-ios.app */;
+			productReference = 3FBB97271DD9038600537C32 /* cctv-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3F12E0C71DD25DAA00BCA008 /* cctv-iosTests */ = {
+		3FBB973A1DD9038600537C32 /* cctv-iosTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F12E0DF1DD25DAA00BCA008 /* Build configuration list for PBXNativeTarget "cctv-iosTests" */;
+			buildConfigurationList = 3FBB97521DD9038600537C32 /* Build configuration list for PBXNativeTarget "cctv-iosTests" */;
 			buildPhases = (
-				3F12E0C41DD25DAA00BCA008 /* Sources */,
-				3F12E0C51DD25DAA00BCA008 /* Frameworks */,
-				3F12E0C61DD25DAA00BCA008 /* Resources */,
+				3FBB97371DD9038600537C32 /* Sources */,
+				3FBB97381DD9038600537C32 /* Frameworks */,
+				3FBB97391DD9038600537C32 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3F12E0CA1DD25DAA00BCA008 /* PBXTargetDependency */,
+				3FBB973D1DD9038600537C32 /* PBXTargetDependency */,
 			);
 			name = "cctv-iosTests";
 			productName = "cctv-iosTests";
-			productReference = 3F12E0C81DD25DAA00BCA008 /* cctv-iosTests.xctest */;
+			productReference = 3FBB973B1DD9038600537C32 /* cctv-iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3F12E0D21DD25DAA00BCA008 /* cctv-iosUITests */ = {
+		3FBB97451DD9038600537C32 /* cctv-iosUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F12E0E21DD25DAA00BCA008 /* Build configuration list for PBXNativeTarget "cctv-iosUITests" */;
+			buildConfigurationList = 3FBB97551DD9038600537C32 /* Build configuration list for PBXNativeTarget "cctv-iosUITests" */;
 			buildPhases = (
-				3F12E0CF1DD25DAA00BCA008 /* Sources */,
-				3F12E0D01DD25DAA00BCA008 /* Frameworks */,
-				3F12E0D11DD25DAA00BCA008 /* Resources */,
+				3FBB97421DD9038600537C32 /* Sources */,
+				3FBB97431DD9038600537C32 /* Frameworks */,
+				3FBB97441DD9038600537C32 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3F12E0D51DD25DAA00BCA008 /* PBXTargetDependency */,
+				3FBB97481DD9038600537C32 /* PBXTargetDependency */,
 			);
 			name = "cctv-iosUITests";
 			productName = "cctv-iosUITests";
-			productReference = 3F12E0D31DD25DAA00BCA008 /* cctv-iosUITests.xctest */;
+			productReference = 3FBB97461DD9038600537C32 /* cctv-iosUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3F12E0AC1DD25DAA00BCA008 /* Project object */ = {
+		3FBB971F1DD9038600537C32 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Student;
 				TargetAttributes = {
-					3F12E0B31DD25DAA00BCA008 = {
+					3FBB97261DD9038600537C32 = {
 						CreatedOnToolsVersion = 7.2;
 					};
-					3F12E0C71DD25DAA00BCA008 = {
+					3FBB973A1DD9038600537C32 = {
 						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 3F12E0B31DD25DAA00BCA008;
+						TestTargetID = 3FBB97261DD9038600537C32;
 					};
-					3F12E0D21DD25DAA00BCA008 = {
+					3FBB97451DD9038600537C32 = {
 						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 3F12E0B31DD25DAA00BCA008;
+						TestTargetID = 3FBB97261DD9038600537C32;
 					};
 				};
 			};
-			buildConfigurationList = 3F12E0AF1DD25DAA00BCA008 /* Build configuration list for PBXProject "cctv-ios" */;
+			buildConfigurationList = 3FBB97221DD9038600537C32 /* Build configuration list for PBXProject "cctv-ios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -221,37 +214,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 3F12E0AB1DD25DAA00BCA008;
-			productRefGroup = 3F12E0B51DD25DAA00BCA008 /* Products */;
+			mainGroup = 3FBB971E1DD9038600537C32;
+			productRefGroup = 3FBB97281DD9038600537C32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3F12E0B31DD25DAA00BCA008 /* cctv-ios */,
-				3F12E0C71DD25DAA00BCA008 /* cctv-iosTests */,
-				3F12E0D21DD25DAA00BCA008 /* cctv-iosUITests */,
+				3FBB97261DD9038600537C32 /* cctv-ios */,
+				3FBB973A1DD9038600537C32 /* cctv-iosTests */,
+				3FBB97451DD9038600537C32 /* cctv-iosUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3F12E0B21DD25DAA00BCA008 /* Resources */ = {
+		3FBB97251DD9038600537C32 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F12E0E71DD25DC500BCA008 /* Main.storyboard in Resources */,
-				3F12E0C21DD25DAA00BCA008 /* LaunchScreen.storyboard in Resources */,
-				3F12E0BF1DD25DAA00BCA008 /* Assets.xcassets in Resources */,
+				3FBB97351DD9038600537C32 /* LaunchScreen.storyboard in Resources */,
+				3FBB97321DD9038600537C32 /* Assets.xcassets in Resources */,
+				3FBB97301DD9038600537C32 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F12E0C61DD25DAA00BCA008 /* Resources */ = {
+		3FBB97391DD9038600537C32 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F12E0D11DD25DAA00BCA008 /* Resources */ = {
+		3FBB97441DD9038600537C32 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,70 +254,69 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3F12E0B01DD25DAA00BCA008 /* Sources */ = {
+		3FBB97231DD9038600537C32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F12E0E91DD25E3500BCA008 /* archivesViewController.swift in Sources */,
-				3F12E0ED1DD25E5E00BCA008 /* streamingViewController.swift in Sources */,
-				3F12E0BA1DD25DAA00BCA008 /* ViewController.swift in Sources */,
-				3F12E0B81DD25DAA00BCA008 /* AppDelegate.swift in Sources */,
-				3F12E0EB1DD25E4300BCA008 /* schedulesViewController.swift in Sources */,
+				3FBB972D1DD9038600537C32 /* ViewController.swift in Sources */,
+				3FBB972B1DD9038600537C32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F12E0C41DD25DAA00BCA008 /* Sources */ = {
+		3FBB97371DD9038600537C32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F12E0CD1DD25DAA00BCA008 /* cctv_iosTests.swift in Sources */,
+				3FBB97401DD9038600537C32 /* cctv_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F12E0CF1DD25DAA00BCA008 /* Sources */ = {
+		3FBB97421DD9038600537C32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F12E0D81DD25DAA00BCA008 /* cctv_iosUITests.swift in Sources */,
+				3FBB974B1DD9038600537C32 /* cctv_iosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3F12E0CA1DD25DAA00BCA008 /* PBXTargetDependency */ = {
+		3FBB973D1DD9038600537C32 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3F12E0B31DD25DAA00BCA008 /* cctv-ios */;
-			targetProxy = 3F12E0C91DD25DAA00BCA008 /* PBXContainerItemProxy */;
+			target = 3FBB97261DD9038600537C32 /* cctv-ios */;
+			targetProxy = 3FBB973C1DD9038600537C32 /* PBXContainerItemProxy */;
 		};
-		3F12E0D51DD25DAA00BCA008 /* PBXTargetDependency */ = {
+		3FBB97481DD9038600537C32 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3F12E0B31DD25DAA00BCA008 /* cctv-ios */;
-			targetProxy = 3F12E0D41DD25DAA00BCA008 /* PBXContainerItemProxy */;
+			target = 3FBB97261DD9038600537C32 /* cctv-ios */;
+			targetProxy = 3FBB97471DD9038600537C32 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3F12E0C01DD25DAA00BCA008 /* LaunchScreen.storyboard */ = {
+		3FBB972E1DD9038600537C32 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3F12E0C11DD25DAA00BCA008 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		3F12E0E51DD25DC500BCA008 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F12E0E61DD25DC500BCA008 /* Base */,
+				3FBB972F1DD9038600537C32 /* Base */,
+				3FBB975B1DD90A3E00537C32 /* en */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FBB97331DD9038600537C32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FBB97341DD9038600537C32 /* Base */,
+				3F7B6E971DD910D900D9303A /* en */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3F12E0DA1DD25DAA00BCA008 /* Debug */ = {
+		3FBB974D1DD9038600537C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -369,7 +361,7 @@
 			};
 			name = Debug;
 		};
-		3F12E0DB1DD25DAA00BCA008 /* Release */ = {
+		3FBB974E1DD9038600537C32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -407,7 +399,7 @@
 			};
 			name = Release;
 		};
-		3F12E0DD1DD25DAA00BCA008 /* Debug */ = {
+		3FBB97501DD9038600537C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -418,7 +410,7 @@
 			};
 			name = Debug;
 		};
-		3F12E0DE1DD25DAA00BCA008 /* Release */ = {
+		3FBB97511DD9038600537C32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -429,7 +421,7 @@
 			};
 			name = Release;
 		};
-		3F12E0E01DD25DAA00BCA008 /* Debug */ = {
+		3FBB97531DD9038600537C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -441,7 +433,7 @@
 			};
 			name = Debug;
 		};
-		3F12E0E11DD25DAA00BCA008 /* Release */ = {
+		3FBB97541DD9038600537C32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -453,7 +445,7 @@
 			};
 			name = Release;
 		};
-		3F12E0E31DD25DAA00BCA008 /* Debug */ = {
+		3FBB97561DD9038600537C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "cctv-iosUITests/Info.plist";
@@ -465,7 +457,7 @@
 			};
 			name = Debug;
 		};
-		3F12E0E41DD25DAA00BCA008 /* Release */ = {
+		3FBB97571DD9038600537C32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "cctv-iosUITests/Info.plist";
@@ -480,40 +472,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F12E0AF1DD25DAA00BCA008 /* Build configuration list for PBXProject "cctv-ios" */ = {
+		3FBB97221DD9038600537C32 /* Build configuration list for PBXProject "cctv-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F12E0DA1DD25DAA00BCA008 /* Debug */,
-				3F12E0DB1DD25DAA00BCA008 /* Release */,
+				3FBB974D1DD9038600537C32 /* Debug */,
+				3FBB974E1DD9038600537C32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F12E0DC1DD25DAA00BCA008 /* Build configuration list for PBXNativeTarget "cctv-ios" */ = {
+		3FBB974F1DD9038600537C32 /* Build configuration list for PBXNativeTarget "cctv-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F12E0DD1DD25DAA00BCA008 /* Debug */,
-				3F12E0DE1DD25DAA00BCA008 /* Release */,
+				3FBB97501DD9038600537C32 /* Debug */,
+				3FBB97511DD9038600537C32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		3F12E0DF1DD25DAA00BCA008 /* Build configuration list for PBXNativeTarget "cctv-iosTests" */ = {
+		3FBB97521DD9038600537C32 /* Build configuration list for PBXNativeTarget "cctv-iosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F12E0E01DD25DAA00BCA008 /* Debug */,
-				3F12E0E11DD25DAA00BCA008 /* Release */,
+				3FBB97531DD9038600537C32 /* Debug */,
+				3FBB97541DD9038600537C32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		3F12E0E21DD25DAA00BCA008 /* Build configuration list for PBXNativeTarget "cctv-iosUITests" */ = {
+		3FBB97551DD9038600537C32 /* Build configuration list for PBXNativeTarget "cctv-iosUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F12E0E31DD25DAA00BCA008 /* Debug */,
-				3F12E0E41DD25DAA00BCA008 /* Release */,
+				3FBB97561DD9038600537C32 /* Debug */,
+				3FBB97571DD9038600537C32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3F12E0AC1DD25DAA00BCA008 /* Project object */;
+	rootObject = 3FBB971F1DD9038600537C32 /* Project object */;
 }

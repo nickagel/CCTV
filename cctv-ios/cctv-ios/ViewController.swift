@@ -2,78 +2,166 @@
 //  ViewController.swift
 //  cctv-ios
 //
-//  Created by Student on 11/8/16.
+//  Created by Student on 11/13/16.
 //  Copyright © 2016 Student. All rights reserved.
 //
 
 import UIKit
-import Foundation
 
 class ViewController: UIViewController {
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let archivesEndpoint: String = "localhost:3000/archives"
-        guard let url = NSURL(string: archivesEndpoint) else {
+        //HITTING THE ARCHIVES
+        let archivesEndpoint: String = "http://localhost:3000/archives"
+        guard let urlArchives = NSURL(string: archivesEndpoint) else {
             print("Error: cannot create URL")
             return
         }
         
-        let urlRequest = NSURLRequest(URL: url)
+        let urlRequestArchives = NSURLRequest(URL: urlArchives)
         
-        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
-        let session = NSURLSession(configuration: config)
-        let task = session.dataTaskWithRequest(urlRequest) { (data, response, error) in
+        
+        NSURLConnection.sendAsynchronousRequest(urlRequestArchives, queue:NSOperationQueue.mainQueue(), completionHandler: {
+            (response, data, error) in
             guard let responseData = data else {
-                print("Error: did not receive data")
+                print("Error: did not reveive data")
                 return
             }
             guard error == nil else {
-                print("error calling GET on /archives")
+                print("error calling GET")
                 print(error)
                 return
-                
-                
             }
             
-            // parse the result as JSON, since that's what the API provides
-            /* do {
-            guard let archives = try NSJSONSerialization.JSONObjectWithData(responseData, options: []) as? [String: AnyObject] else {
-            // archives: handle
-            print("Couldn't convert received data to JSON dictionary")
-            return
-            }
-            // now we have the todo, let's just print it to prove we can access it
-            print("The archives is: " + archives.description)
-            
-            // the todo object is a dictionary
-            // so we just access the title using the "title" key
-            // so check for a title and print it if we have one
-            guard let archivesTitle = archives["title"] as? String else {
-            print("Could not get todo title from JSON")
-            return
-            }
-            print("The title is: " + archivesTitle)
+            /* let jo : NSDictionary
+            do {
+            jo =
+            try NSJSONSerialization.JSONObjectWithData(responseData, options: [])
+            as! NSDictionary
             } catch  {
             print("error trying to convert data to JSON")
+            return
+            }
+            
+            if let cval = jo["context"]
+            {
+            self.restContext.text = String(cval)
             }
             
             */
             
+            
+        })
+        
+        
+        
+        //HITTING SCHEDULES
+        let schedulesEndpoint: String = "http://localhost:3000/schedules"
+        guard let urlSchedules = NSURL(string: schedulesEndpoint) else {
+            print("Error: cannot create URL")
+            return
         }
         
-        task.resume()
+        let urlRequestSchedules = NSURLRequest(URL: urlSchedules)
+        
+        
+        NSURLConnection.sendAsynchronousRequest(urlRequestSchedules, queue:NSOperationQueue.mainQueue(), completionHandler: {
+            (response, data, error) in
+            guard let responseData = data else {
+                print("Error: did not reveive data")
+                return
+            }
+            guard error == nil else {
+                print("error calling GET")
+                print(error)
+                return
+            }
+            
+            /*
+            let jo : NSDictionary
+            do {
+            jo =
+            try NSJSONSerialization.JSONObjectWithData(responseData, options: [])
+            as! NSDictionary
+            } catch  {
+            print("error trying to convert data to JSON")
+            return
+            }
+            
+            if let cval = jo["context"]
+            {
+            self.restContext.text = String(cval)
+            }
+            
+            
+            */
+            
+            
+        })
+        
+        //HITTING STREAMING
+        
+        let streamingEndpoint: String = "http://localhost:3000/streaming"
+        guard let urlStreaming = NSURL(string: streamingEndpoint) else {
+            print("Error: cannot create URL")
+            return
+        }
+        
+        let urlRequestStreaming = NSURLRequest(URL: urlStreaming)
+        
+        
+        NSURLConnection.sendAsynchronousRequest(urlRequestStreaming, queue:NSOperationQueue.mainQueue(), completionHandler: {
+            (response, data, error) in
+            guard let responseData = data else {
+                print("Error: did not reveive data")
+                return
+            }
+            guard error == nil else {
+                print("error calling GET")
+                print(error)
+                return
+            }
+            
+            /*
+            let jo : NSDictionary
+            do {
+            jo =
+            try NSJSONSerialization.JSONObjectWithData(responseData, options: [])
+            as! NSDictionary
+            } catch  {
+            print("error trying to convert data to JSON")
+            return
+            }
+            
+            if let cval = jo["context"]
+            {
+            self.restContext.text = String(cval)
+            }
+            
+            
+            */
+            
+            
+            
+            
+            
+            
+        })
+        
+        
+        
+        
+        
     }
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
+
+
 }
+

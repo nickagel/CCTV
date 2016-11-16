@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "CCTV"; ObjectID = "39s-U5-h4P"; */
+"39s-U5-h4P.text" = "CCTV";
+
+/* Class = "UIButton"; normalTitle = "Archives"; ObjectID = "5I7-pZ-YZ5"; */
+"5I7-pZ-YZ5.normalTitle" = "Archives";
+
+/* Class = "UILabel"; text = "archives"; ObjectID = "7ni-pW-tuP"; */
+"7ni-pW-tuP.text" = "archives";
+
+/* Class = "UIButton"; normalTitle = "Channel 17"; ObjectID = "HPc-bB-hQR"; */
+"HPc-bB-hQR.normalTitle" = "Channel 17";
+
+/* Class = "UILabel"; text = "streaming"; ObjectID = "XNU-Kb-P4O"; */
+"XNU-Kb-P4O.text" = "streaming";
+
+/* Class = "UILabel"; text = "Schedule"; ObjectID = "hBd-BK-91B"; */
+"hBd-BK-91B.text" = "Schedule";
+
+/* Class = "UIButton"; normalTitle = "Schedule"; ObjectID = "lwB-va-pq6"; */
+"lwB-va-pq6.normalTitle" = "Schedule";
+
+/* Class = "UIButton"; normalTitle = "Channel 317"; ObjectID = "n8h-kI-crI"; */
+"n8h-kI-crI.normalTitle" = "Channel 317";

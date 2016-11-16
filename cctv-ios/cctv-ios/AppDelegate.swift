@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  cctv-ios
 //
-//  Created by Student on 11/8/16.
+//  Created by Student on 11/13/16.
 //  Copyright © 2016 Student. All rights reserved.
 //
 
