@@ -13,4 +13,25 @@ router.get("/archives", function (req, res, next) {
     })
 })
 
+router.post("/archives", function (req, res, next) {
+
+    var query = Archive.find( { 	
+        $or: [  
+            {title: "/Burlington/"}, 				
+            {subtitle: "/Burlington/"}, 
+   			{airDate: /2016/} 
+               ] 
+            })
+   		    .sort({airDate: -1})
+		    .limit(10)
+
+    query.exec(function (err, archives) {
+        if(err) {
+            res.status(404)
+        }
+        
+        res.status(200).json({"archives": archives})
+    })
+})
+
 module.exports = router
