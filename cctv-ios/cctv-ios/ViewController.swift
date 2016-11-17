@@ -16,15 +16,15 @@ class ViewController: UIViewController {
         
         //HITTING THE ARCHIVES
         let archivesEndpoint: String = "http://localhost:3000/archives"
-        guard let urlArchives = NSURL(string: archivesEndpoint) else {
+        guard let urlArchives = URL(string: archivesEndpoint) else {
             print("Error: cannot create URL")
             return
         }
         
-        let urlRequestArchives = NSURLRequest(URL: urlArchives)
+        let urlRequestArchives = URLRequest(url: urlArchives)
         
         
-        NSURLConnection.sendAsynchronousRequest(urlRequestArchives, queue:NSOperationQueue.mainQueue(), completionHandler: {
+        NSURLConnection.sendAsynchronousRequest(urlRequestArchives, queue:OperationQueue.main, completionHandler: {
             (response, data, error) in
             guard let responseData = data else {
                 print("Error: did not reveive data")
@@ -60,15 +60,15 @@ class ViewController: UIViewController {
         
         //HITTING SCHEDULES
         let schedulesEndpoint: String = "http://localhost:3000/schedules"
-        guard let urlSchedules = NSURL(string: schedulesEndpoint) else {
+        guard let urlSchedules = URL(string: schedulesEndpoint) else {
             print("Error: cannot create URL")
             return
         }
         
-        let urlRequestSchedules = NSURLRequest(URL: urlSchedules)
+        let urlRequestSchedules = URLRequest(url: urlSchedules)
         
         
-        NSURLConnection.sendAsynchronousRequest(urlRequestSchedules, queue:NSOperationQueue.mainQueue(), completionHandler: {
+        NSURLConnection.sendAsynchronousRequest(urlRequestSchedules, queue:OperationQueue.main, completionHandler: {
             (response, data, error) in
             guard let responseData = data else {
                 print("Error: did not reveive data")
@@ -105,15 +105,15 @@ class ViewController: UIViewController {
         //HITTING STREAMING
         
         let streamingEndpoint: String = "http://localhost:3000/streaming"
-        guard let urlStreaming = NSURL(string: streamingEndpoint) else {
+        guard let urlStreaming = URL(string: streamingEndpoint) else {
             print("Error: cannot create URL")
             return
         }
         
-        let urlRequestStreaming = NSURLRequest(URL: urlStreaming)
+        let urlRequestStreaming = URLRequest(url: urlStreaming)
         
         
-        NSURLConnection.sendAsynchronousRequest(urlRequestStreaming, queue:NSOperationQueue.mainQueue(), completionHandler: {
+        NSURLConnection.sendAsynchronousRequest(urlRequestStreaming, queue:OperationQueue.main, completionHandler: {
             (response, data, error) in
             guard let responseData = data else {
                 print("Error: did not reveive data")
