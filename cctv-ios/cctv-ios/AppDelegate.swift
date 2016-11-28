@@ -15,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        let navigationBarAppearace = UINavigationBar.appearance()
+        
+//        navigationBarAppearace.tintColor = UIColor(red:0.40, green:0.14, blue:0.40, alpha:1.0)
+        navigationBarAppearace.barTintColor = UIColor(red:0.40, green:0.14, blue:0.40, alpha:1.0)
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        
         // Override point for customization after application launch.
         return true
     }
@@ -41,6 +48,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    //http://uicolor.xyz/#/hex-to-ui
+//    func UIColorFromHex(rgbValue:UInt32, alpha:Double=1.0)->UIColor {
+//        // rbgValue - define hex color value
+//        // alpha - define transparency value
+//        // returns - CGColor
+//        
+//        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+//        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+//        let blue = CGFloat(rgbValue & 0xFF)/256.0
+//        
+//        
+//        return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
+//    }
 
 }
 

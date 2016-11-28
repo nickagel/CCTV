@@ -14,6 +14,7 @@
 		3FBB97351DD9038600537C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB97331DD9038600537C32 /* LaunchScreen.storyboard */; };
 		3FBB97401DD9038600537C32 /* cctv_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB973F1DD9038600537C32 /* cctv_iosTests.swift */; };
 		3FBB974B1DD9038600537C32 /* cctv_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB974A1DD9038600537C32 /* cctv_iosUITests.swift */; };
+		968EDA251DEB7D2E0075B842 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968EDA241DEB7D2E0075B842 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3FBB974A1DD9038600537C32 /* cctv_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cctv_iosUITests.swift; sourceTree = "<group>"; };
 		3FBB974C1DD9038600537C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FBB975B1DD90A3E00537C32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		968EDA241DEB7D2E0075B842 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968EDA251DEB7D2E0075B842 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				3FBB973E1DD9038600537C32 /* cctv-iosTests */,
 				3FBB97491DD9038600537C32 /* cctv-iosUITests */,
 				3FBB97281DD9038600537C32 /* Products */,
+				968EDA231DEB7D2E0075B842 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +129,14 @@
 				3FBB974C1DD9038600537C32 /* Info.plist */,
 			);
 			path = "cctv-iosUITests";
+			sourceTree = "<group>";
+		};
+		968EDA231DEB7D2E0075B842 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				968EDA241DEB7D2E0075B842 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
