@@ -16,7 +16,7 @@ $ node server
 
 CCTV uses a number of open source projects to work properly:
 
-* [async] - utility module for asynchronous JavaScript
+* [Async] - utility module for asynchronous JavaScript
 * [Body Parser] - body parsing middleware
 * [Express] - Fast, unopinionated minimalist framework
 * [Moment Timezone] - parse and display moments in any timezone
@@ -25,7 +25,7 @@ CCTV uses a number of open source projects to work properly:
 
    [Body Parser]: <https://github.com/expressjs/body-parser>
    [Express]: <http://expressjs.com>
-   [async]: <https://caolan.github.io/async/>
+   [Async]: <https://caolan.github.io/async/>
    [Moment Timezone]: <https://www.npmjs.com/package/moment-timezone>
    [MongoDb]: <https://www.npmjs.com/package/mongodb>
    [mongoose]: <http://mongoosejs.com/index.html>
