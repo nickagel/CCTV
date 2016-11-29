@@ -14,16 +14,18 @@ router.get("/archives", function (req, res, next) {
 })
 
 router.post("/archives", function (req, res, next) {
+    var search = req.body.search.replace(/[^a-zA-Z ]/g, "")
+    var regex = new RegExp("^" + search, 'i')
 
-    var query = Archive.find( { 	
-        $or: [  
-            {title: "/Burlington/"}, 				
-            {subtitle: "/Burlington/"}, 
-   			{airDate: /2016/} 
-               ] 
-            })
-   		    .sort({airDate: -1})
-		    .limit(10)
+    var query = Archive.find({
+        $or:
+        [
+            {title: {$regex: regex}}, 
+            {subtitle: {$regex: regex}}
+        ]   
+    })
+    .sort({airDate: -1})
+    .limit(10)
 
     query.exec(function (err, archives) {
         if(err) {
