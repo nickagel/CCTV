@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		147F40395621AFB511F6552B /* Pods_cctv_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF90978151BFAEDD7BB6E64 /* Pods_cctv_iosTests.framework */; };
 		3FBB972B1DD9038600537C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB972A1DD9038600537C32 /* AppDelegate.swift */; };
 		3FBB972D1DD9038600537C32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB972C1DD9038600537C32 /* ViewController.swift */; };
 		3FBB97301DD9038600537C32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB972E1DD9038600537C32 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		3FBB97351DD9038600537C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB97331DD9038600537C32 /* LaunchScreen.storyboard */; };
 		3FBB97401DD9038600537C32 /* cctv_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB973F1DD9038600537C32 /* cctv_iosTests.swift */; };
 		3FBB974B1DD9038600537C32 /* cctv_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB974A1DD9038600537C32 /* cctv_iosUITests.swift */; };
+		4218AC2A4E6A6BF88680AC35 /* Pods_cctv_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD3014EFC2B6BCC3A40F606 /* Pods_cctv_ios.framework */; };
+		4E11CE78C5893BE5E4CA6C71 /* Pods_cctv_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5C11911FE5A3EBE656E5FB /* Pods_cctv_iosUITests.framework */; };
 		96473CBD1DF52F5800B1C4EB /* ArchiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96473CBC1DF52F5800B1C4EB /* ArchiveTableViewCell.swift */; };
 		968EDA251DEB7D2E0075B842 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968EDA241DEB7D2E0075B842 /* MediaPlayer.framework */; };
 		A794A6AB1DF4EECB0089FB1A /* Uri.swift in Sources */ = {isa = PBXBuildFile; fileRef = A794A6AA1DF4EECB0089FB1A /* Uri.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F9C9AF282C12D3EE3D52582 /* Pods-cctv-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cctv-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cctv-iosUITests/Pods-cctv-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2143086C1D7DC938A20BF3C9 /* Pods-cctv-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cctv-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cctv-iosUITests/Pods-cctv-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2A5C11911FE5A3EBE656E5FB /* Pods_cctv_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cctv_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7B6E971DD910D900D9303A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3FBB97271DD9038600537C32 /* cctv-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cctv-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBB972A1DD9038600537C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,10 +59,16 @@
 		3FBB974A1DD9038600537C32 /* cctv_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cctv_iosUITests.swift; sourceTree = "<group>"; };
 		3FBB974C1DD9038600537C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FBB975B1DD90A3E00537C32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		67FC0E3547ACDB83AA148AB0 /* Pods-cctv-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cctv-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cctv-iosTests/Pods-cctv-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AD3014EFC2B6BCC3A40F606 /* Pods_cctv_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cctv_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E6F543597C2390FADE0D9D6 /* Pods-cctv-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cctv-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-cctv-ios/Pods-cctv-ios.release.xcconfig"; sourceTree = "<group>"; };
 		96473CBC1DF52F5800B1C4EB /* ArchiveTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveTableViewCell.swift; sourceTree = "<group>"; };
 		968EDA241DEB7D2E0075B842 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		A794A6AA1DF4EECB0089FB1A /* Uri.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uri.swift; sourceTree = "<group>"; };
 		A794A6AE1DF4F94B0089FB1A /* Uris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uris.swift; sourceTree = "<group>"; };
+		E76FE59D50621B0BBB874999 /* Pods-cctv-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cctv-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cctv-iosTests/Pods-cctv-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7C1E60D4E0A34A9ED9146A7 /* Pods-cctv-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cctv-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cctv-ios/Pods-cctv-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		EEF90978151BFAEDD7BB6E64 /* Pods_cctv_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cctv_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				968EDA251DEB7D2E0075B842 /* MediaPlayer.framework in Frameworks */,
+				4218AC2A4E6A6BF88680AC35 /* Pods_cctv_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147F40395621AFB511F6552B /* Pods_cctv_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +93,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E11CE78C5893BE5E4CA6C71 /* Pods_cctv_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37EEC1B1E0FFF62F3AE1BE38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7C1E60D4E0A34A9ED9146A7 /* Pods-cctv-ios.debug.xcconfig */,
+				8E6F543597C2390FADE0D9D6 /* Pods-cctv-ios.release.xcconfig */,
+				67FC0E3547ACDB83AA148AB0 /* Pods-cctv-iosTests.debug.xcconfig */,
+				E76FE59D50621B0BBB874999 /* Pods-cctv-iosTests.release.xcconfig */,
+				0F9C9AF282C12D3EE3D52582 /* Pods-cctv-iosUITests.debug.xcconfig */,
+				2143086C1D7DC938A20BF3C9 /* Pods-cctv-iosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3FBB971E1DD9038600537C32 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +121,7 @@
 				3FBB97491DD9038600537C32 /* cctv-iosUITests */,
 				3FBB97281DD9038600537C32 /* Products */,
 				968EDA231DEB7D2E0075B842 /* Frameworks */,
+				37EEC1B1E0FFF62F3AE1BE38 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				968EDA241DEB7D2E0075B842 /* MediaPlayer.framework */,
+				7AD3014EFC2B6BCC3A40F606 /* Pods_cctv_ios.framework */,
+				EEF90978151BFAEDD7BB6E64 /* Pods_cctv_iosTests.framework */,
+				2A5C11911FE5A3EBE656E5FB /* Pods_cctv_iosUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FBB974F1DD9038600537C32 /* Build configuration list for PBXNativeTarget "cctv-ios" */;
 			buildPhases = (
+				79FC7C652734901C1E216469 /* [CP] Check Pods Manifest.lock */,
 				3FBB97231DD9038600537C32 /* Sources */,
 				3FBB97241DD9038600537C32 /* Frameworks */,
 				3FBB97251DD9038600537C32 /* Resources */,
+				77A6AC2B22C8E92479B6F7AA /* [CP] Embed Pods Frameworks */,
+				DEED231DE81B537667354DB4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FBB97521DD9038600537C32 /* Build configuration list for PBXNativeTarget "cctv-iosTests" */;
 			buildPhases = (
+				460DEBC2D6B9708583225C74 /* [CP] Check Pods Manifest.lock */,
 				3FBB97371DD9038600537C32 /* Sources */,
 				3FBB97381DD9038600537C32 /* Frameworks */,
 				3FBB97391DD9038600537C32 /* Resources */,
+				22501B18777DF5067DAFF796 /* [CP] Embed Pods Frameworks */,
+				EE2252506CABACFA80ED8BA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FBB97551DD9038600537C32 /* Build configuration list for PBXNativeTarget "cctv-iosUITests" */;
 			buildPhases = (
+				67CBCD6038C46E5EFFE7337A /* [CP] Check Pods Manifest.lock */,
 				3FBB97421DD9038600537C32 /* Sources */,
 				3FBB97431DD9038600537C32 /* Frameworks */,
 				3FBB97441DD9038600537C32 /* Resources */,
+				A5CEB8B58CC0E8E9D77755F3 /* [CP] Embed Pods Frameworks */,
+				283767DB22D35C069C28B504 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,7 +260,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Student;
 				TargetAttributes = {
 					3FBB97261DD9038600537C32 = {
@@ -284,6 +325,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22501B18777DF5067DAFF796 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cctv-iosTests/Pods-cctv-iosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		283767DB22D35C069C28B504 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cctv-iosUITests/Pods-cctv-iosUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		460DEBC2D6B9708583225C74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		67CBCD6038C46E5EFFE7337A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		77A6AC2B22C8E92479B6F7AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cctv-ios/Pods-cctv-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79FC7C652734901C1E216469 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5CEB8B58CC0E8E9D77755F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cctv-iosUITests/Pods-cctv-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEED231DE81B537667354DB4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cctv-ios/Pods-cctv-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE2252506CABACFA80ED8BA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cctv-iosTests/Pods-cctv-iosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3FBB97231DD9038600537C32 /* Sources */ = {
@@ -436,6 +615,7 @@
 		};
 		3FBB97501DD9038600537C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7C1E60D4E0A34A9ED9146A7 /* Pods-cctv-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "cctv-ios/Info.plist";
@@ -448,6 +628,7 @@
 		};
 		3FBB97511DD9038600537C32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E6F543597C2390FADE0D9D6 /* Pods-cctv-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "cctv-ios/Info.plist";
@@ -460,6 +641,7 @@
 		};
 		3FBB97531DD9038600537C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67FC0E3547ACDB83AA148AB0 /* Pods-cctv-iosTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "cctv-iosTests/Info.plist";
@@ -473,6 +655,7 @@
 		};
 		3FBB97541DD9038600537C32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76FE59D50621B0BBB874999 /* Pods-cctv-iosTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "cctv-iosTests/Info.plist";
@@ -486,6 +669,7 @@
 		};
 		3FBB97561DD9038600537C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F9C9AF282C12D3EE3D52582 /* Pods-cctv-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "cctv-iosUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -499,6 +683,7 @@
 		};
 		3FBB97571DD9038600537C32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2143086C1D7DC938A20BF3C9 /* Pods-cctv-iosUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "cctv-iosUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

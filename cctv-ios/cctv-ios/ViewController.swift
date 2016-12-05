@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import EVReflection
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // 
@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //HITTING STREAMING
         
-        let streamingEndpoint: String = "http://localhost:3000/initialize"
+        let streamingEndpoint: String = "http://localhost:3000/streaming"
         guard let urlStreaming = URL(string: streamingEndpoint) else {
             print("Error: cannot create URL")
             return
@@ -54,13 +54,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 return
             }
             
-
-            for (key,value) in initialize {
-                for obj in value as! [AnyObject]{
-                    print(obj)
-                    print("-----")
-                }
-            }
+            let uris = Uris(dictionary: initialize)
+            print(uris)
             
         })
     }
@@ -86,5 +81,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
 
+}
+
+class Uri: EVObject{
+    var channel: String?
+    var uri: String?
+}
+
+class Uris: EVObject{
+    var uris: [Uri]!
 }
 
