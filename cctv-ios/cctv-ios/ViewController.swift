@@ -93,7 +93,45 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             print(archives)
             
         })
+        
+        //hit schedules
+        let schedulesEndpoint: String = "http://localhost:3000/schedules"
+        guard let urlSchedules = URL(string: schedulesEndpoint) else {
+            print("Error: cannot create URL")
+            return
+        }
+        
+        let urlRequestSchedules = URLRequest(url: urlSchedules)
+        
+        
+        NSURLConnection.sendAsynchronousRequest(urlRequestSchedules, queue:OperationQueue.main, completionHandler: {
+            (response, data, error) in
+            guard let responseData = data else {
+                print("Error: did not reveive data")
+                return
+            }
+            guard error == nil else {
+                print("error calling GET")
+                return
+            }
+            
+            let initSchedules : NSDictionary
+            do {
+                initSchedules =
+                    try JSONSerialization.jsonObject(with: responseData, options: .allowFragments)
+                    as! NSDictionary
+            } catch  {
+                print("error trying to convert data to JSON")
+                return
+            }
+            
+            let schedules = Schedules(dictionary: initSchedules)
+            print(schedules)
+            
+        })
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -136,4 +174,17 @@ class Archive: EVObject{
 
 class Archives: EVObject{
     var Archives: [Archive]!
+}
+
+class Schedule: EVObject{
+    var ch_type: String?
+    var endTime: String?
+    var startTime: String?
+    var title: String?
+}
+
+class Schedules: EVObject{
+    var date: String?
+    var channel17: [Schedule]!
+    var channel317:[Schedule]!
 }
