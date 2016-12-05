@@ -1,6 +1,0 @@
-framework module Pods_cctv_iosUITests {
-  umbrella header "Pods-cctv-iosUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
