@@ -17,6 +17,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var subtitles = ["sub1","sub2","sub3"]
     var images = [UIImage(named:"Video Thumb Placeholder"),UIImage(named:"Video Thumb Placeholder"),UIImage(named:"Video Thumb Placeholder")]
     var times = ["00:00","00:01","00:02"]
+    
+    // for ach
+    //    var archiveArray = [ProgramItem]()
+    //    var filteredArchiveArray = [ProgramItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -137,6 +141,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //    func numberOfSections(in tableView: UITableView) -> Int {
+    //        return 1
+    //    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
