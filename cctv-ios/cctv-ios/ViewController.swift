@@ -36,18 +36,23 @@ class ViewController: UIViewController {
                 return
             }
             
-            let jo : NSDictionary
+            let initialize : NSDictionary
             do {
-                jo =
-                    try JSONSerialization.jsonObject(with: responseData, options: [])
+                initialize =
+                    try JSONSerialization.jsonObject(with: responseData, options: .allowFragments)
                     as! NSDictionary
             } catch  {
                 print("error trying to convert data to JSON")
                 return
             }
             
-            print(jo)
-            
+
+            for (key,value) in initialize {
+                for obj in value as! [AnyObject]{
+                    print(obj)
+                    print("-----")
+                }
+            }
             
         })
     }
