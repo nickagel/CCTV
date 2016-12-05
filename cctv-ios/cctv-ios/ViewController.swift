@@ -23,7 +23,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         
         //HITTING STREAMING
-        
         let streamingEndpoint: String = "http://localhost:3000/streaming"
         guard let urlStreaming = URL(string: streamingEndpoint) else {
             print("Error: cannot create URL")
@@ -44,9 +43,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 return
             }
             
-            let initialize : NSDictionary
+            let initUris : NSDictionary
             do {
-                initialize =
+                initUris =
                     try JSONSerialization.jsonObject(with: responseData, options: .allowFragments)
                     as! NSDictionary
             } catch  {
@@ -54,8 +53,44 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 return
             }
             
-            let uris = Uris(dictionary: initialize)
+            let uris = Uris(dictionary: initUris)
             print(uris)
+            
+        })
+        
+        //hit archives
+        let archivesEndpoint: String = "http://localhost:3000/archives"
+        guard let urlArchives = URL(string: archivesEndpoint) else {
+            print("Error: cannot create URL")
+            return
+        }
+        
+        let urlRequestArchives = URLRequest(url: urlArchives)
+        
+        
+        NSURLConnection.sendAsynchronousRequest(urlRequestArchives, queue:OperationQueue.main, completionHandler: {
+            (response, data, error) in
+            guard let responseData = data else {
+                print("Error: did not reveive data")
+                return
+            }
+            guard error == nil else {
+                print("error calling GET")
+                return
+            }
+            
+            let initArchives : NSDictionary
+            do {
+                initArchives =
+                    try JSONSerialization.jsonObject(with: responseData, options: .allowFragments)
+                    as! NSDictionary
+            } catch  {
+                print("error trying to convert data to JSON")
+                return
+            }
+            
+            let archives = Archives(dictionary: initArchives)
+            print(archives)
             
         })
     }
@@ -92,3 +127,13 @@ class Uris: EVObject{
     var uris: [Uri]!
 }
 
+class Archive: EVObject{
+    var nid: String?
+    var title: String?
+    var subtitle: String?
+    var airDate: String?
+}
+
+class Archives: EVObject{
+    var Archives: [Archive]!
+}
