@@ -35,7 +35,7 @@ router.get("/initialize", function(req, res, next){
             })
         }
     ], function(err, results){
-        res.status(200).json(results)
+        res.status(200).json({results})
     })
 })
 
