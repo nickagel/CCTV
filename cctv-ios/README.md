@@ -9,12 +9,6 @@ Install the dependencies to build application.
 $ cd CCTV/cctv-ios
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ sudo gem install cocoapods
-$ emacs Podfile
---> Go to line # Pods for cctv-ios
---> Go to next line
-pod "EVReflection"
-CNTRL x-s 
-CNTRL x-c
 pod install
 open cctv-ios
 --> double click on cctv-ios.xcworkspace
