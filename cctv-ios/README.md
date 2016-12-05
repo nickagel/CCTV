@@ -13,11 +13,14 @@ $ sudo gem install cocoapods
 pod install
 open cctv-ios
 --> double click on cctv-ios.xcworkspace
+```
 
 **Troubleshoot** 
+```sh
 1. close Xcode
 2. delete contents of Pods folder
 3. pod install
+```
 
 **NOTE:** Ask cctv-api needs to be running for app to work
 
