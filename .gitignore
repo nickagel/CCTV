@@ -1,3 +1,4 @@
 .vscode/launch.json
 cctv-api/node_modules
 cctv-api/config.json
+/cctv-ios/Pods/
