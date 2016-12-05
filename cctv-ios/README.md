@@ -4,6 +4,7 @@
 CCTV-IOS requires [SWIFT 3.0](http://www.apple.com/swift/).
 
 Install the dependencies to build application.
+**NOTE:** Make sure Xcode is closed during these installations
 
 ```sh
 $ cd CCTV/cctv-ios
@@ -12,7 +13,13 @@ $ sudo gem install cocoapods
 pod install
 open cctv-ios
 --> double click on cctv-ios.xcworkspace
-```
+
+**Troubleshoot** 
+```sh
+close Xcode
+delete contents of Pods folder
+$ pod install
+
 **NOTE:** Ask cctv-api needs to be running for app to work
 
 ### Technology
