@@ -129,7 +129,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 return
             }
             
-            let schedules = Schedules(dictionary: initSchedules)
+            let schedules = Scheduling(dictionary: initSchedules)
             print(schedules)
             
         })
@@ -195,4 +195,8 @@ class Schedules: EVObject{
     var date: String?
     var channel17: [Schedule]!
     var channel317:[Schedule]!
+}
+
+class Scheduling: EVObject{
+    var schedules: [Schedules]!
 }
