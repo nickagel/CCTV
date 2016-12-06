@@ -59,7 +59,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             let uris = Uris(dictionary: initUris)
             self.locals.uris = uris.uris
-            
+            print(self.locals.uris)
         })
         
         //hit archives
@@ -132,7 +132,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             let schedules = Scheduling(dictionary: initSchedules)
             self.locals.schedules = schedules.schedules
-            
+            print(self.locals.schedules)
         })
     }
     
@@ -163,47 +163,4 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
 
-}
-
-class Uri: EVObject{
-    var channel: String?
-    var uri: String?
-}
-
-class Uris: EVObject{
-    var uris: [Uri]!
-}
-
-class Archive: EVObject{
-    var nid: String?
-    var title: String?
-    var subtitle: String?
-    var airDate: String?
-}
-
-class Archives: EVObject{
-    var archives: [Archive]!
-}
-
-class Schedule: EVObject{
-    var ch_type: String?
-    var endTime: String?
-    var startTime: String?
-    var title: String?
-}
-
-class Schedules: EVObject{
-    var date: String?
-    var channel17: [Schedule]!
-    var channel317:[Schedule]!
-}
-
-class Scheduling: EVObject{
-    var schedules: [Schedules]!
-}
-
-class Locals{
-    var schedules: [Schedules]!
-    var uris: [Uri]!
-    var archives: [Archive]!
 }

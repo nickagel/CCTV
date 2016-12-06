@@ -19,5 +19,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cctv-ios/ViewController.swift"
+            timestampString = "502743381.389855"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cctv_ios.ViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "cctv-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nagel/Documents/CCTV/cctv-ios/cctv-ios/ViewController.swift"
+                  timestampString = "502743382.068287"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "287">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cctv_ios.ViewController.(viewDidLoad () -&gt; ()).(closure #1)"
+                  moduleName = "cctv-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nagel/Documents/CCTV/cctv-ios/cctv-ios/ViewController.swift"
+                  timestampString = "502743382.071441"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
