@@ -13,7 +13,7 @@
         <scene sceneID="ejM-TN-I7q">
             <objects>
                 <navigationController id="JyI-aq-4cn" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mag-Ji-j2u">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Mag-Ji-j2u">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -216,7 +216,7 @@
                                         <rect key="frame" x="0.0" y="28" width="359" height="236"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="feY-WC-Tzf" id="paC-ok-faf">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="235.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="235"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Svs-Vs-rMG">

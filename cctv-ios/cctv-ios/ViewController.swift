@@ -24,19 +24,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        //HITTING STREAMING
-        let streamingEndpoint: String = "http://localhost:3000/streaming"
-        guard let urlStreaming = URL(string: streamingEndpoint) else {
+        //hit initialize
+        let initEndpoint: String = "http://localhost:3000/initialize"
+        guard let urlInit = URL(string: initEndpoint) else {
             print("Error: cannot create URL")
             return
         }
         
-        let urlRequestStreaming = URLRequest(url: urlStreaming)
+        let urlRequestInit = URLRequest(url: urlInit)
         
-        
-        NSURLConnection.sendAsynchronousRequest(urlRequestStreaming, queue:OperationQueue.main, completionHandler: {
+        NSURLConnection.sendAsynchronousRequest(urlRequestInit, queue:OperationQueue.main, completionHandler: {
             (response, data, error) in
             guard let responseData = data else {
                 print("Error: did not reveive data")
@@ -47,9 +45,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 return
             }
             
-            let initUris : NSDictionary
+            let initialize : NSDictionary
             do {
-                initUris =
+                initialize =
                     try JSONSerialization.jsonObject(with: responseData, options: .allowFragments)
                     as! NSDictionary
             } catch  {
@@ -57,82 +55,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 return
             }
             
-            let uris = Uris(dictionary: initUris)
-            self.locals.uris = uris.uris
-            print(self.locals.uris)
-        })
-        
-        //hit archives
-        let archivesEndpoint: String = "http://localhost:3000/archives"
-        guard let urlArchives = URL(string: archivesEndpoint) else {
-            print("Error: cannot create URL")
-            return
-        }
-        
-        let urlRequestArchives = URLRequest(url: urlArchives)
-        
-        
-        NSURLConnection.sendAsynchronousRequest(urlRequestArchives, queue:OperationQueue.main, completionHandler: {
-            (response, data, error) in
-            guard let responseData = data else {
-                print("Error: did not reveive data")
-                return
-            }
-            guard error == nil else {
-                print("error calling GET")
-                return
-            }
-            
-            let initArchives : NSDictionary
-            do {
-                initArchives =
-                    try JSONSerialization.jsonObject(with: responseData, options: .allowFragments)
-                    as! NSDictionary
-            } catch  {
-                print("error trying to convert data to JSON")
-                return
-            }
-            
-            let archives = Archives(dictionary: initArchives)
-            self.locals.archives = archives.archives
-            print(self.locals.archives)
-            
-        })
-        
-        //hit schedules
-        let schedulesEndpoint: String = "http://localhost:3000/schedules"
-        guard let urlSchedules = URL(string: schedulesEndpoint) else {
-            print("Error: cannot create URL")
-            return
-        }
-        
-        let urlRequestSchedules = URLRequest(url: urlSchedules)
-        
-        
-        NSURLConnection.sendAsynchronousRequest(urlRequestSchedules, queue:OperationQueue.main, completionHandler: {
-            (response, data, error) in
-            guard let responseData = data else {
-                print("Error: did not reveive data")
-                return
-            }
-            guard error == nil else {
-                print("error calling GET")
-                return
-            }
-            
-            let initSchedules : NSDictionary
-            do {
-                initSchedules =
-                    try JSONSerialization.jsonObject(with: responseData, options: .allowFragments)
-                    as! NSDictionary
-            } catch  {
-                print("error trying to convert data to JSON")
-                return
-            }
-            
-            let schedules = Scheduling(dictionary: initSchedules)
-            self.locals.schedules = schedules.schedules
-            print(self.locals.schedules)
+            let appData = Locals(dictionary: initialize)
+            self.locals = appData
+            print(self.locals)
         })
     }
     
@@ -162,5 +87,4 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         return cell
     }
-
 }

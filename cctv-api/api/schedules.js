@@ -11,7 +11,7 @@ router.get("/schedules", function (req, res, next) {
             res.status(404)
         }
         
-        res.status(200).json({"schedules": schedules})
+        res.status(200).json(schedules)
     })
 })
 

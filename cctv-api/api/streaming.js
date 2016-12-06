@@ -7,7 +7,7 @@ router.get("/streaming", function (req, res, next) {
             res.status(404)
         }
         
-        res.status(200).json({"uris": uris})
+        res.status(200).json(uris)
     })
 })
 

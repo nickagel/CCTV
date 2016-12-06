@@ -21,12 +21,9 @@
 		96473CBD1DF52F5800B1C4EB /* ArchiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96473CBC1DF52F5800B1C4EB /* ArchiveTableViewCell.swift */; };
 		968EDA251DEB7D2E0075B842 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968EDA241DEB7D2E0075B842 /* MediaPlayer.framework */; };
 		A794A6AB1DF4EECB0089FB1A /* Uri.swift in Sources */ = {isa = PBXBuildFile; fileRef = A794A6AA1DF4EECB0089FB1A /* Uri.swift */; };
-		A794A6AF1DF4F94B0089FB1A /* Uris.swift in Sources */ = {isa = PBXBuildFile; fileRef = A794A6AE1DF4F94B0089FB1A /* Uris.swift */; };
 		A7A80DDC1DF743660041727C /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A80DDB1DF743660041727C /* Archive.swift */; };
-		A7A80DDE1DF743930041727C /* Archives.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A80DDD1DF743930041727C /* Archives.swift */; };
 		A7A80DE01DF743B50041727C /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A80DDF1DF743B50041727C /* Schedule.swift */; };
 		A7A80DE21DF743D20041727C /* Schedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A80DE11DF743D10041727C /* Schedules.swift */; };
-		A7A80DE41DF743EF0041727C /* Scheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A80DE31DF743EF0041727C /* Scheduling.swift */; };
 		A7A80DE61DF744090041727C /* Locals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A80DE51DF744090041727C /* Locals.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,12 +70,9 @@
 		96473CBC1DF52F5800B1C4EB /* ArchiveTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveTableViewCell.swift; sourceTree = "<group>"; };
 		968EDA241DEB7D2E0075B842 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		A794A6AA1DF4EECB0089FB1A /* Uri.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uri.swift; sourceTree = "<group>"; };
-		A794A6AE1DF4F94B0089FB1A /* Uris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uris.swift; sourceTree = "<group>"; };
 		A7A80DDB1DF743660041727C /* Archive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
-		A7A80DDD1DF743930041727C /* Archives.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archives.swift; sourceTree = "<group>"; };
 		A7A80DDF1DF743B50041727C /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		A7A80DE11DF743D10041727C /* Schedules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedules.swift; sourceTree = "<group>"; };
-		A7A80DE31DF743EF0041727C /* Scheduling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheduling.swift; sourceTree = "<group>"; };
 		A7A80DE51DF744090041727C /* Locals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locals.swift; sourceTree = "<group>"; };
 		E76FE59D50621B0BBB874999 /* Pods-cctv-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cctv-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cctv-iosTests/Pods-cctv-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		E7C1E60D4E0A34A9ED9146A7 /* Pods-cctv-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cctv-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cctv-ios/Pods-cctv-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,12 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				A794A6AA1DF4EECB0089FB1A /* Uri.swift */,
-				A794A6AE1DF4F94B0089FB1A /* Uris.swift */,
 				A7A80DDB1DF743660041727C /* Archive.swift */,
-				A7A80DDD1DF743930041727C /* Archives.swift */,
 				A7A80DDF1DF743B50041727C /* Schedule.swift */,
 				A7A80DE11DF743D10041727C /* Schedules.swift */,
-				A7A80DE31DF743EF0041727C /* Scheduling.swift */,
 				A7A80DE51DF744090041727C /* Locals.swift */,
 			);
 			name = models;
@@ -492,15 +483,12 @@
 			files = (
 				96473CBD1DF52F5800B1C4EB /* ArchiveTableViewCell.swift in Sources */,
 				964217C71DF570BB00E01014 /* ProgramItem.swift in Sources */,
-				A794A6AF1DF4F94B0089FB1A /* Uris.swift in Sources */,
 				A7A80DE01DF743B50041727C /* Schedule.swift in Sources */,
 				A7A80DE21DF743D20041727C /* Schedules.swift in Sources */,
 				A7A80DE61DF744090041727C /* Locals.swift in Sources */,
 				A794A6AB1DF4EECB0089FB1A /* Uri.swift in Sources */,
 				3FBB972D1DD9038600537C32 /* ViewController.swift in Sources */,
 				3FBB972B1DD9038600537C32 /* AppDelegate.swift in Sources */,
-				A7A80DE41DF743EF0041727C /* Scheduling.swift in Sources */,
-				A7A80DDE1DF743930041727C /* Archives.swift in Sources */,
 				A7A80DDC1DF743660041727C /* Archive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

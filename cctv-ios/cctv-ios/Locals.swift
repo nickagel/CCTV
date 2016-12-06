@@ -7,7 +7,8 @@
 //
 
 import Foundation
-class Locals{
+import EVReflection
+class Locals: EVObject{
     var schedules: [Schedules]!
     var uris: [Uri]!
     var archives: [Archive]!

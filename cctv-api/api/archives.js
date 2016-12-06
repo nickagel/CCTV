@@ -9,7 +9,7 @@ router.get("/archives", function (req, res, next) {
             res.status(404)
         }
         
-        res.status(200).json({"archives": archives})
+        res.status(200).json(archives)
     })
 })
 
@@ -32,7 +32,7 @@ router.post("/archives", function (req, res, next) {
             res.status(404)
         }
         
-        res.status(200).json({"archives": archives})
+        res.status(200).json(archives)
     })
 })
 
