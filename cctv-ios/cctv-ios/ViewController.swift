@@ -9,7 +9,7 @@
 import UIKit
 import EVReflection
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+    var locals = Locals()
     // 
     @IBOutlet weak var tableArchiveView: UITableView!
     
@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
             let uris = Uris(dictionary: initUris)
-            print(uris)
+            self.locals.uris = uris.uris
             
         })
         
@@ -94,7 +94,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
             let archives = Archives(dictionary: initArchives)
-            print(archives)
+            self.locals.archives = archives.archives
+            print(self.locals.archives)
             
         })
         
@@ -130,7 +131,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
             let schedules = Scheduling(dictionary: initSchedules)
-            print(schedules)
+            self.locals.schedules = schedules.schedules
             
         })
     }
@@ -181,7 +182,7 @@ class Archive: EVObject{
 }
 
 class Archives: EVObject{
-    var Archives: [Archive]!
+    var archives: [Archive]!
 }
 
 class Schedule: EVObject{
@@ -199,4 +200,10 @@ class Schedules: EVObject{
 
 class Scheduling: EVObject{
     var schedules: [Schedules]!
+}
+
+class Locals{
+    var schedules: [Schedules]!
+    var uris: [Uri]!
+    var archives: [Archive]!
 }
