@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var locals = Locals()
     // 
     @IBOutlet weak var tableArchiveView: UITableView!
+    @IBOutlet weak var tableScheduleView: UITableView!
     
 //    var titleArray = [String]()
     
@@ -98,4 +99,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell", for: indexPath) as! ScheduleTableViewCell
+        
+        cell.thumbView.image =
+        
+        return cell
+    }
+
 }

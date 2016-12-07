@@ -186,6 +186,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rL-By-jON" id="ole-5F-gEF"/>
+                                    <outlet property="delegate" destination="8rL-By-jON" id="Nza-2f-31r"/>
+                                </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rBW-NL-7Ef">
                                 <rect key="frame" x="35" y="80" width="304" height="29"/>
@@ -285,6 +289,7 @@
                     <navigationItem key="navigationItem" title="Archives" id="GV9-3q-eh5"/>
                     <connections>
                         <outlet property="tableArchiveView" destination="vUN-9p-gAw" id="5hu-Hf-dMO"/>
+                        <outlet property="tableScheduleView" destination="vUN-9p-gAw" id="D4j-8s-WpK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6G-2l-4on" userLabel="First Responder" sceneMemberID="firstResponder"/>
