@@ -32,7 +32,7 @@ router.post("/archives", function (req, res, next) {
             res.status(404)
         }
         
-        res.status(200).json(archives)
+        res.status(200).json({"archives": archives})
     })
 })
 

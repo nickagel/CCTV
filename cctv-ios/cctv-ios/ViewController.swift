@@ -9,6 +9,7 @@
 import UIKit
 import EVReflection
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    let repository = RepositoryRetrieval()
     var locals = Locals()
     // 
     @IBOutlet weak var tableArchiveView: UITableView!
@@ -18,47 +19,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var images = [UIImage(named:"Video Thumb Placeholder"),UIImage(named:"Video Thumb Placeholder"),UIImage(named:"Video Thumb Placeholder")]
     var times = ["00:00","00:01","00:02"]
     
-    // for ach
-    //    var archiveArray = [ProgramItem]()
-    //    var filteredArchiveArray = [ProgramItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //hit initialize
-        let initEndpoint: String = "http://localhost:3000/initialize"
-        guard let urlInit = URL(string: initEndpoint) else {
-            print("Error: cannot create URL")
-            return
-        }
+        var initialize = self.repository.Initialize()
+        self.locals = initialize
+        print(self.locals)
         
-        let urlRequestInit = URLRequest(url: urlInit)
-        
-        NSURLConnection.sendAsynchronousRequest(urlRequestInit, queue:OperationQueue.main, completionHandler: {
-            (response, data, error) in
-            guard let responseData = data else {
-                print("Error: did not reveive data")
-                return
-            }
-            guard error == nil else {
-                print("error calling GET")
-                return
-            }
-            
-            let initialize : NSDictionary
-            do {
-                initialize =
-                    try JSONSerialization.jsonObject(with: responseData, options: .allowFragments)
-                    as! NSDictionary
-            } catch  {
-                print("error trying to convert data to JSON")
-                return
-            }
-            
-            let appData = Locals(dictionary: initialize)
-            self.locals = appData
-            print(self.locals)
-        })
+        //var exampleSearch = self.repository.SearchArchives(search:"Burlington").archives
+    
     }
     
     
@@ -67,10 +37,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    //    func numberOfSections(in tableView: UITableView) -> Int {
-    //        return 1
-    //    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
