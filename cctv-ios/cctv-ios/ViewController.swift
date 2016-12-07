@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         var initialize = self.repository.Initialize()
         Globals.locals = initialize
-//        print(Globals.locals)
+        //print(Globals.locals)
 //        print(Globals.locals.archives)
         
         
@@ -57,14 +57,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     cell.titleLabel.text = item.title!
                     cell.subtitleLabel.text = item.subtitle! // some of these are empty strings
                     cell.timeLabel.text = item.airDate! // parse this to look nice, timeLabel is a deceptive label but oh well
+                    // set NID here for retrieving video
                 }
                 i += 1
             }
         }
-        
-        
-        //        print(titleArray[indexPath.row+1])
-        //        cell.titleLabel.text = titleArray[indexPath.row]
             
         return cell
     }

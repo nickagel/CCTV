@@ -14,29 +14,18 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     var locals = Locals()
 
     @IBOutlet weak var tableSchedulesView: UITableView!
+    @IBOutlet weak var channelController: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // default selected segment is channel 17 - 0
+        self.channelController.selectedSegmentIndex = 0
+        
         var initialize = self.repository.Initialize()
         Globals.locals = initialize
-        print(Globals.locals)
-        //print(self.locals.archives)
-        
-        //var i = 0
-        //for j in self.locals.archives {
-        //    if i == 3 {
-        //        print(j.nid!)
-        //    }
-        //    i += 1
-        //}
-        
-        //        for j in self.locals.archives {
-        //print(j.title!)
-        //            self.titleArray.append(j.title!)
-        //        }
-        
-        //        print(self.titleArray)
+//        print(Globals.locals)
+//        print(Globals.locals.schedules)
         
         //var exampleSearch = self.repository.SearchArchives(search:"Burlington")
     }
@@ -46,31 +35,89 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         // Dispose of any resources that can be recreated.
     }
     
+    // ACTION
+    // 0 is channel 17
+    // 1 is channel 317
+    @IBAction func ChangeChannel(_ sender: Any) {
+        if channelController.selectedSegmentIndex == 0 {
+//            print("channel 17")
+            self.channelController.selectedSegmentIndex = 0 // getting fat errors, hacky workaround
+            tableSchedulesView.reloadData()
+        } else if channelController.selectedSegmentIndex == 1 {
+//            print("channel 317")
+            self.channelController.selectedSegmentIndex = 1 // getting fat errors, hacky workaround
+            tableSchedulesView.reloadData()
+        }
+    }
+    
+    // END ACTION
+    
+    
+    // these two functions get recalled on .reloadData()
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10 // as many programs as is in the object
+        return 24 // as many programs as is in the object
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell", for: indexPath) as! ScheduleTableViewCell
         
-        cell.startTimeLabel.text = "11:11"
-        cell.endTimeLabel.text = "22:22"
-        cell.programNameLabel.text = "program"
+        
+        var k = 0
+        if channelController.selectedSegmentIndex == 0 {
+            print("channel17")
+            for i in Globals.locals.schedules {
+                for j in i.channel17 {
+                    if k == indexPath.row {
+                        cell.startTimeLabel.text = j.startTime!
+                        cell.endTimeLabel.text = j.endTime!
+                        cell.programNameLabel.text = j.title!
+                    }
+                    k += 1
+                }
+            }
+        } else if channelController.selectedSegmentIndex == 1 {
+            print("channel317")
+            for i in Globals.locals.schedules {
+                for j in i.channel317 {
+                    if k == indexPath.row {
+                        cell.startTimeLabel.text = j.startTime!
+                        cell.endTimeLabel.text = j.endTime!
+                        cell.programNameLabel.text = j.title!
+                    }
+                    k += 1
+                }
+            }
+        }
+        
+//        for i in Globals.locals.schedules {
+//            
+//            if channelController.selectedSegmentIndex == 0 {
+//                
+//            } else if channelController.selectedSegmentIndex == 1 {
+//                
+//            }
+//            
+//        }
+
+        
+//        var i = 0
+//        if Globals.locals.schedules == nil {
+//            print("fuck")
+//        } else {
+//            for item in Globals.locals.schedules {
+//                if i == indexPath.row {
+//                    
+//                }
+//                i += 1
+//            }
+//        }
+        
+//        cell.startTimeLabel.text = "11:11"
+//        cell.endTimeLabel.text = "22:22"
+//        cell.programNameLabel.text = "program"
+        
         
         return cell
     }
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
