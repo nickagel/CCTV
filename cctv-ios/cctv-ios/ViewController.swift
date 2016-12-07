@@ -29,8 +29,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         var initialize = self.repository.Initialize()
-        self.locals = initialize
-        print(self.locals)
+        Globals.locals = initialize
+        print(Globals.locals)
         //print(self.locals.archives)
         
         //var i = 0
