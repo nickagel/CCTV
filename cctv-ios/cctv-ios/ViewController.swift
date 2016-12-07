@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.locals = initialize
         print(self.locals)
         
-        //var exampleSearch = self.repository.SearchArchives(search:"Burlington").archives
+        //var exampleSearch = self.repository.SearchArchives(search:"Burlington")
     
     }
     
