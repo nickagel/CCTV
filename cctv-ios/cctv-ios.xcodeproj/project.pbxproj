@@ -17,7 +17,6 @@
 		3FBB974B1DD9038600537C32 /* cctv_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB974A1DD9038600537C32 /* cctv_iosUITests.swift */; };
 		4218AC2A4E6A6BF88680AC35 /* Pods_cctv_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD3014EFC2B6BCC3A40F606 /* Pods_cctv_ios.framework */; };
 		4E11CE78C5893BE5E4CA6C71 /* Pods_cctv_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5C11911FE5A3EBE656E5FB /* Pods_cctv_iosUITests.framework */; };
-		964217C71DF570BB00E01014 /* ProgramItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964217C61DF570BB00E01014 /* ProgramItem.swift */; };
 		96473CBD1DF52F5800B1C4EB /* ArchiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96473CBC1DF52F5800B1C4EB /* ArchiveTableViewCell.swift */; };
 		968EDA251DEB7D2E0075B842 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968EDA241DEB7D2E0075B842 /* MediaPlayer.framework */; };
 		A744BBB41DF7B7B100495E8A /* RepositoryRetrieval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBB31DF7B7B100495E8A /* RepositoryRetrieval.swift */; };
@@ -68,7 +67,6 @@
 		67FC0E3547ACDB83AA148AB0 /* Pods-cctv-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cctv-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cctv-iosTests/Pods-cctv-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AD3014EFC2B6BCC3A40F606 /* Pods_cctv_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cctv_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6F543597C2390FADE0D9D6 /* Pods-cctv-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cctv-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-cctv-ios/Pods-cctv-ios.release.xcconfig"; sourceTree = "<group>"; };
-		964217C61DF570BB00E01014 /* ProgramItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramItem.swift; sourceTree = "<group>"; };
 		96473CBC1DF52F5800B1C4EB /* ArchiveTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveTableViewCell.swift; sourceTree = "<group>"; };
 		968EDA241DEB7D2E0075B842 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		A744BBB31DF7B7B100495E8A /* RepositoryRetrieval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryRetrieval.swift; sourceTree = "<group>"; };
@@ -153,8 +151,6 @@
 				A744BBB21DF7B6EF00495E8A /* repository */,
 				3FBB972A1DD9038600537C32 /* AppDelegate.swift */,
 				3FBB972C1DD9038600537C32 /* ViewController.swift */,
-				964217C61DF570BB00E01014 /* ProgramItem.swift */,
-				96473CBC1DF52F5800B1C4EB /* ArchiveTableViewCell.swift */,
 				3FBB972E1DD9038600537C32 /* Main.storyboard */,
 				3FBB97331DD9038600537C32 /* LaunchScreen.storyboard */,
 				3FBB97361DD9038600537C32 /* Info.plist */,
@@ -204,6 +200,7 @@
 		A794A6A91DF4EEAD0089FB1A /* models */ = {
 			isa = PBXGroup;
 			children = (
+				96473CBC1DF52F5800B1C4EB /* ArchiveTableViewCell.swift */,
 				A794A6AA1DF4EECB0089FB1A /* Uri.swift */,
 				A7A80DDB1DF743660041727C /* Archive.swift */,
 				A7A80DDF1DF743B50041727C /* Schedule.swift */,
@@ -496,7 +493,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				96473CBD1DF52F5800B1C4EB /* ArchiveTableViewCell.swift in Sources */,
-				964217C71DF570BB00E01014 /* ProgramItem.swift in Sources */,
 				A7A80DE01DF743B50041727C /* Schedule.swift in Sources */,
 				A7A80DE21DF743D20041727C /* Schedules.swift in Sources */,
 				A7A80DE61DF744090041727C /* Locals.swift in Sources */,
