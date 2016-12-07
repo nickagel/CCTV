@@ -123,7 +123,7 @@
         <!--Schedule-->
         <scene sceneID="2jy-bg-pX2">
             <objects>
-                <viewController id="8rL-By-jON" customClass="ViewController" customModule="cctv_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rL-By-jON" customClass="ScheduleViewController" customModule="cctv_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vS5-Yc-Fg3"/>
                         <viewControllerLayoutGuide type="bottom" id="zeh-fw-4Ub"/>
@@ -145,7 +145,7 @@
                                         <rect key="frame" x="0.0" y="28" width="359" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pOX-Ut-pGw" id="V8Q-LY-FYT">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="80.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSa-hx-YOp">
@@ -203,6 +203,9 @@
                         <color key="backgroundColor" red="0.97254901959999995" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Schedule" id="yVj-J4-rwN"/>
+                    <connections>
+                        <outlet property="tableSchedulesView" destination="HSG-8y-8Qs" id="ucE-iM-gNK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4z-4V-nG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,7 +236,7 @@
                                         <rect key="frame" x="0.0" y="28" width="359" height="236"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="feY-WC-Tzf" id="paC-ok-faf">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="235.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="235"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Svs-Vs-rMG">
@@ -289,7 +292,6 @@
                     <navigationItem key="navigationItem" title="Archives" id="GV9-3q-eh5"/>
                     <connections>
                         <outlet property="tableArchiveView" destination="vUN-9p-gAw" id="5hu-Hf-dMO"/>
-                        <outlet property="tableScheduleView" destination="vUN-9p-gAw" id="D4j-8s-WpK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6G-2l-4on" userLabel="First Responder" sceneMemberID="firstResponder"/>

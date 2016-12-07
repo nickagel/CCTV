@@ -14,15 +14,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var locals = Locals()
     // 
     @IBOutlet weak var tableArchiveView: UITableView!
-    @IBOutlet weak var tableScheduleView: UITableView!
+//    @IBOutlet weak var tableScheduleView: UITableView!
     
 //    var titleArray = [String]()
     
 //     Test data for Archives
-    var titles = ["title1","title2","title3"]
-    var subtitles = ["sub1","sub2","sub3"]
+    var titles = ["TEST","title2","title3"]
+    var subtitles = ["SUB","sub2","sub3"]
     var images = [UIImage(named:"Video Thumb Placeholder"),UIImage(named:"Video Thumb Placeholder"),UIImage(named:"Video Thumb Placeholder")]
-    var times = ["00:00","00:01","00:02"]
+    var times = ["33:00","00:01","00:02"]
     
 
     override func viewDidLoad() {
@@ -41,10 +41,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //    i += 1
         //}
         
-        for j in self.locals.archives {
+//        for j in self.locals.archives {
             //print(j.title!)
 //            self.titleArray.append(j.title!)
-        }
+//        }
         
 //        print(self.titleArray)
         
@@ -99,14 +99,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         return cell
     }
-    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell", for: indexPath) as! ScheduleTableViewCell
-//        
-//        cell.thumbView.image =
-//        
-//        return cell
-//    }
 
 }
