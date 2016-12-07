@@ -13,7 +13,7 @@
         <scene sceneID="ejM-TN-I7q">
             <objects>
                 <navigationController id="JyI-aq-4cn" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Mag-Ji-j2u">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mag-Ji-j2u">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -145,7 +145,7 @@
                                         <rect key="frame" x="0.0" y="28" width="359" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pOX-Ut-pGw" id="V8Q-LY-FYT">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="80.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSa-hx-YOp">
@@ -212,11 +212,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="236" id="feY-WC-Tzf" customClass="ArchiveTableViewCell" customModule="cctv_ios" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="archiveCell" rowHeight="236" id="feY-WC-Tzf" customClass="ArchiveTableViewCell" customModule="cctv_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="359" height="236"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="feY-WC-Tzf" id="paC-ok-faf">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="235"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="235.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Svs-Vs-rMG">
