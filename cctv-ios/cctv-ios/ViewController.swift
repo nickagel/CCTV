@@ -33,7 +33,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //print(Globals.locals)
         //print(Globals.locals.archives)
         
-        //var exampleSearch = self.repository.SearchArchives(search:"Burlington")
+//        self.repository.SearchArchives(search:"Burlington"){
+//            (archives, error) in
+//            print(archives)
+//        }
     
     }
     

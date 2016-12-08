@@ -55,14 +55,14 @@ class RepositoryRetrieval{
         task.resume()
     }
     
-    func SearchArchives(search:String) -> ArchivesFound{
-        var test = true
+    func SearchArchives(search:String, completionHandler: @escaping (_ locals: ArchivesFound, _ error:Bool) -> Void){
         var archives = ArchivesFound()
         
         let initEndpoint: String = url + "/archives"
         guard let urlInit = URL(string: initEndpoint) else {
             print("Error: cannot create URL")
-            return archives
+            completionHandler(archives, true)
+            return;
         }
         
         var request = URLRequest(url: urlInit)
@@ -82,7 +82,7 @@ class RepositoryRetrieval{
         request.allHTTPHeaderFields = headers
         
         let session = URLSession.shared
-        let dataTask = session.dataTask(with: request, completionHandler: { (data, response, error) -> Void in
+        let task = session.dataTask(with: request, completionHandler: { (data, response, error) -> Void in
             guard let responseData = data else {
                 print("Error: did not receive data")
                 return
@@ -94,20 +94,14 @@ class RepositoryRetrieval{
                         return
                 }
                 
-                let locals = ArchivesFound(dictionary: initialize)
-                archives = locals
-                test = false
+                let archives = ArchivesFound(dictionary: initialize)
+                completionHandler(archives, true)
+                return
             } catch  {
                 print("error trying to convert data to JSON")
                 return
             }
         })
-        
-        dataTask.resume()
-        while test{
-            
-        }
-        return archives
+        task.resume()
     }
-    
 }
