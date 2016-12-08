@@ -11,14 +11,14 @@ import EVReflection
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let repository = RepositoryRetrieval()
-    var locals = Locals()
+    
     // 
     @IBOutlet weak var tableArchiveView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var initialize = self.repository.Initialize()
+        let initialize = self.repository.Initialize()
         Globals.locals = initialize
         //print(Globals.locals)
 //        print(Globals.locals.archives)

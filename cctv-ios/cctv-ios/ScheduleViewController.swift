@@ -22,7 +22,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         // default selected segment is channel 17 - 0
         self.channelController.selectedSegmentIndex = 0
         
-        var initialize = self.repository.Initialize()
+        let initialize = self.repository.Initialize()
         Globals.locals = initialize
 //        print(Globals.locals)
 //        print(Globals.locals.schedules)
