@@ -2,5 +2,7 @@
 cctv-api/node_modules
 cctv-api/config.json
 /cctv-ios/Pods/
-*.xcuserstate
-*.DS_Store
+**/xcuserdata
+**/.DS_Store
+*~
+*.swp
