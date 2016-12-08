@@ -1,10 +1,16 @@
-//
 //  ViewController.swift
 //  cctv-ios
 //
 //  Created by Student on 11/13/16.
 //  Copyright © 2016 Student. All rights reserved.
-//
+
+/*
+ * VIEW CONTROLLER
+ * Connected to "View Controller" & "Archives" view in storyboard
+ * displays *10* most recent archive items
+ * searches through past archives and returns *10* most recent items
+ * on cell tap, plays video using NID
+ */
 
 import UIKit
 import EVReflection
@@ -14,6 +20,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // 
     @IBOutlet weak var tableArchiveView: UITableView!
+    
+    var nidVar = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +29,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let initialize = self.repository.Initialize()
         Globals.locals = initialize
         //print(Globals.locals)
-//        print(Globals.locals.archives)
-        
+        //print(Globals.locals.archives)
         
         //var exampleSearch = self.repository.SearchArchives(search:"Burlington")
     
     }
     
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -57,11 +62,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     cell.titleLabel.text = item.title!
                     cell.subtitleLabel.text = item.subtitle! // some of these are empty strings
                     cell.timeLabel.text = item.airDate! // parse this to look nice, timeLabel is a deceptive label but oh well
-                    // set NID here for retrieving video
+                    self.nidVar = item.nid!
                 }
                 i += 1
             }
         }
+        
+        print(self.nidVar)
             
         return cell
     }
