@@ -26,8 +26,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let initialize = self.repository.Initialize()
-        Globals.locals = initialize
+        self.repository.Initialize(){
+            (locals, error) in
+            Globals.locals = locals
+        }
         //print(Globals.locals)
         //print(Globals.locals.archives)
         

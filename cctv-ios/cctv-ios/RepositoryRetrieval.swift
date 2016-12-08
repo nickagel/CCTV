@@ -10,13 +10,12 @@ import Foundation
 class RepositoryRetrieval{
     let url = "http://localhost:3000"
     
-    func Initialize() -> Locals{
+    func Initialize(completionHandler: @escaping (_ locals: Locals, _ error:Bool) -> Void){
         var locals = Locals()
-        var test = true
         let initEndpoint: String = url + "/initialize"
         guard let urlInit = URL(string: initEndpoint) else {
-            print("Error: cannot create URL")
-            return locals
+            completionHandler(locals, true)
+            return
         }
         
         var urlRequest = URLRequest(url: urlInit)
@@ -44,32 +43,28 @@ class RepositoryRetrieval{
                         print("error trying to convert data to JSON")
                         return
                 }
-            
+                
                 locals = Locals(dictionary: initialize)
-                test = false
+                completionHandler(locals, false)
+                return
             } catch  {
                 print("error trying to convert data to JSON")
                 return
             }
         }
-    
         task.resume()
-        while test{
-            
-        }
-        return locals
     }
     
     func SearchArchives(search:String) -> ArchivesFound{
         var test = true
         var archives = ArchivesFound()
-
+        
         let initEndpoint: String = url + "/archives"
         guard let urlInit = URL(string: initEndpoint) else {
             print("Error: cannot create URL")
             return archives
         }
-
+        
         var request = URLRequest(url: urlInit)
         
         let headers = [

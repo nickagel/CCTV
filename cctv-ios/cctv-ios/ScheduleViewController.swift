@@ -28,8 +28,10 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         // default selected segment is channel 17 - 0
         self.channelController.selectedSegmentIndex = 0
         
-        let initialize = self.repository.Initialize()
-        Globals.locals = initialize
+        self.repository.Initialize(){
+            (locals, error) in
+            Globals.locals = locals
+        }
         //print(Globals.locals)
         //print(Globals.locals.schedules)
         
