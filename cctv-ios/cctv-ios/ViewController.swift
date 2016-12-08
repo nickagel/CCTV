@@ -65,7 +65,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 if i == indexPath.row {
                     cell.titleLabel.text = item.title!
                     cell.subtitleLabel.text = item.subtitle! // some of these are empty strings
-                    cell.timeLabel.text = item.airDate! // parse this to look nice, timeLabel is a deceptive label but oh well
+                    
+                    let index = item.airDate!.index(item.airDate!.startIndex, offsetBy: 10)
+                    let substring = item.airDate!.substring(to: index)
+                    cell.timeLabel.text = substring // timeLabel is a deceptive label but oh well
+                    
                     self.nidVar = item.nid!
                 }
                 i += 1
