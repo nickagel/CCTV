@@ -14,17 +14,20 @@
 
 import UIKit
 import EVReflection
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     let repository = RepositoryRetrieval()
     
-    // 
     @IBOutlet weak var tableArchiveView: UITableView!
+//    @IBOutlet weak var archiveSearch: UISearchBar!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var nidVar = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        archiveSearch.delegate = self
         
         self.repository.Initialize(){
             (locals, error) in
@@ -40,26 +43,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        
+        return 10 // determines the number of rows rendered at a time.
+        
     } // end numberOfRowsInSection
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "archiveCell", for: indexPath) as! ArchiveTableViewCell
         
-        cell.thumbView.image = UIImage(named:"Video Thumb Placeholder")
-        
-        // loop through to access the "indexPath"th item
-        print(Globals.locals.archives)
+        // This is the video icon -- if implemented, need to resize the container in main storyboard
+        //cell.thumbView.image = UIImage(named:"Video Thumb Placeholder")
+
+        //print(Globals.locals.archives)
         var i = 0
         if Globals.locals.archives == nil {
-            print("fuck")
+            print("ERROR: No 'archives' object to populate table cells")
         } else {
             for item in Globals.locals.archives {
                 if i == indexPath.row {
@@ -70,36 +70,48 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     let substring = item.airDate!.substring(to: index)
                     cell.timeLabel.text = substring // timeLabel is a deceptive label but oh well
                     
-                    self.nidVar = item.nid!
+                    self.nidVar = item.nid! // use this to render the video
                 }
                 i += 1
             }
         }
-        
         print(self.nidVar)
-            
         return cell
+        
     } // end cellForRowAt
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         var i = 0
         if Globals.locals.archives == nil {
-            print("fuck")
+            print("ERROR: No 'archives' object to populate table cells")
         } else {
             for item in Globals.locals.archives {
                 if i == indexPath.row {
-                    print(item.nid!)
+                    print(item.nid!) // comment this mf
                     performSegue(withIdentifier: "VideoShowSegue", sender: "https://v.cdn.vine.co/r/videos/AA3C120C521177175800441692160_38f2cbd1ffb.1.5.13763579289575020226.mp4")
                 }
                 i += 1
             }
         }
+        
     } // end didSelectRowAt
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier=="VideoShowSegue"{
             let s = segue.destination as! VideoController
             s.setUrl(sender as! String)
         }
+        
+    } // end prepare
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        //
     }
-}
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("searchText:", searchBar.text!)
+    } // end searchBarSearchButtonClicked
+    
+} // end class

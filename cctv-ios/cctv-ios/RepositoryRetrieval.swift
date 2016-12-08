@@ -56,7 +56,7 @@ class RepositoryRetrieval{
     }
     
     func SearchArchives(search:String, completionHandler: @escaping (_ locals: ArchivesFound, _ error:Bool) -> Void){
-        var archives = ArchivesFound()
+        let archives = ArchivesFound()
         
         let initEndpoint: String = url + "/archives"
         guard let urlInit = URL(string: initEndpoint) else {

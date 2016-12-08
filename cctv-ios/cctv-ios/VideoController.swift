@@ -1,10 +1,13 @@
-//
 //  VideoController.swift
 //  cctv-ios
 //
 //  Created by Nicholas Agel on 12/8/16.
 //  Copyright © 2016 Student. All rights reserved.
-//
+
+/*
+ * VIDEO VIEW CONTROLLER
+ * Connected to "Video" view in storyboard
+ */
 
 import UIKit
 import Player

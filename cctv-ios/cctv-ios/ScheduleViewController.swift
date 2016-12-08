@@ -10,7 +10,6 @@
  * displays schedule
  * toggle channel for different schedules
  */
-//
 
 import UIKit
 
@@ -26,6 +25,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         
         // default selected segment is channel 17 - 0
+        // need to set it to this every time archives is opened
         self.channelController.selectedSegmentIndex = 0
         
         self.repository.Initialize(){
@@ -39,23 +39,17 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
             self.currentDateLabel.text = i.date!
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     // Segmented Control
     @IBAction func ChangeChannel(_ sender: Any) {
         if channelController.selectedSegmentIndex == 0 {
-            //print("channel 17")
+//            print("channel 17")
             self.channelController.selectedSegmentIndex = 0 // getting fat errors, hacky workaround
-            tableSchedulesView.reloadData()
         } else if channelController.selectedSegmentIndex == 1 {
             //print("channel 317")
             self.channelController.selectedSegmentIndex = 1 // getting fat errors, hacky workaround
-            tableSchedulesView.reloadData()
         }
+        tableSchedulesView.reloadData()
     } // end action on Segmented Control
     
     // get recalled on .reloadData()
