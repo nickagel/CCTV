@@ -20,6 +20,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
 
     @IBOutlet weak var tableSchedulesView: UITableView!
     @IBOutlet weak var channelController: UISegmentedControl!
+    @IBOutlet weak var currentDateLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +30,12 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         
         let initialize = self.repository.Initialize()
         Globals.locals = initialize
-//        print(Globals.locals)
-//        print(Globals.locals.schedules)
+        //print(Globals.locals)
+        //print(Globals.locals.schedules)
+        
+        for i in Globals.locals.schedules {
+            self.currentDateLabel.text = i.date!
+        }
     }
 
     override func didReceiveMemoryWarning() {
