@@ -134,7 +134,7 @@
                                         <rect key="frame" x="0.0" y="28" width="359" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pOX-Ut-pGw" id="V8Q-LY-FYT">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="80.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSa-hx-YOp">
@@ -229,7 +229,7 @@
                                         <rect key="frame" x="0.0" y="28" width="359" height="149"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="feY-WC-Tzf" id="paC-ok-faf">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="148"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="148.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Svs-Vs-rMG">

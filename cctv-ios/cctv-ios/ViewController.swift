@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
-    }
+    } // end numberOfRowsInSection
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
@@ -58,7 +58,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else {
             for item in Globals.locals.archives {
                 if i == indexPath.row {
-//                    print(item.title!) // set the shit here
                     cell.titleLabel.text = item.title!
                     cell.subtitleLabel.text = item.subtitle! // some of these are empty strings
                     cell.timeLabel.text = item.airDate! // parse this to look nice, timeLabel is a deceptive label but oh well
@@ -71,6 +70,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print(self.nidVar)
             
         return cell
-    }
+    } // end cellForRowAt
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        var i = 0
+        if Globals.locals.archives == nil {
+            print("fuck")
+        } else {
+            for item in Globals.locals.archives {
+                if i == indexPath.row {
+                    print(item.nid!)
+                }
+                i += 1
+            }
+        }
+    } // end didSelectRowAt
 
 }
