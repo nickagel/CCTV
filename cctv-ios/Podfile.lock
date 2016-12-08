@@ -1,12 +1,15 @@
 PODS:
   - EVReflection (3.4.2)
+  - Player (0.2.2)
 
 DEPENDENCIES:
   - EVReflection
+  - Player (~> 0.2.0)
 
 SPEC CHECKSUMS:
   EVReflection: 3b24ff86d9e630fcfb71a6927e02ce67256595b8
+  Player: 5cff076cc9f13b51f56b6fb7bed24431569b8102
 
-PODFILE CHECKSUM: 115b725d65c161671d17ba5a05bf324f476df6da
+PODFILE CHECKSUM: e4e3a1768e8363c1f5e83b741b88c784d7fceddd
 
 COCOAPODS: 1.1.1
