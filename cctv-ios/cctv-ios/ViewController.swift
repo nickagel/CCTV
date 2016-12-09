@@ -19,15 +19,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let repository = RepositoryRetrieval()
     
     @IBOutlet weak var tableArchiveView: UITableView!
-//    @IBOutlet weak var archiveSearch: UISearchBar!
     @IBOutlet weak var searchBar: UISearchBar!
     
     var nidVar = String()
+    var searchText = String()
+    var mode = Double()
+    
+//    var array = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        archiveSearch.delegate = self
+        // start with not search mode
+        // 0 = not search mode
+        // 1 = search mode
+        self.mode = 0
         
         self.repository.Initialize(){
             (locals, error) in
@@ -35,20 +41,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         //print(Globals.locals)
         //print(Globals.locals.archives)
-        
-//        self.repository.SearchArchives(search:"Burlington"){
-//            (archives, error) in
-//            print(archives)
-//        }
     
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        var rows = Int()
+        var j = 0
+        
+        if mode == 0 {
+            
+            return 10
+            
+        } else if mode == 1 {
+    
+            self.repository.SearchArchives(search: searchText){
+                (archives, error) in
+                return archives.archives.count
+            }
+//            return j
+        }
+        
         return 10 // determines the number of rows rendered at a time.
         
     } // end numberOfRowsInSection
     
+    // gets recalled on .readloadData()
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "archiveCell", for: indexPath) as! ArchiveTableViewCell
@@ -57,25 +75,51 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //cell.thumbView.image = UIImage(named:"Video Thumb Placeholder")
 
         //print(Globals.locals.archives)
-        var i = 0
-        if Globals.locals.archives == nil {
-            print("ERROR: No 'archives' object to populate table cells")
-        } else {
-            for item in Globals.locals.archives {
-                if i == indexPath.row {
-                    cell.titleLabel.text = item.title!
-                    cell.subtitleLabel.text = item.subtitle! // some of these are empty strings
-                    
-                    let index = item.airDate!.index(item.airDate!.startIndex, offsetBy: 10)
-                    let substring = item.airDate!.substring(to: index)
-                    cell.timeLabel.text = substring // timeLabel is a deceptive label but oh well
-                    
-                    self.nidVar = item.url! // use this to render the video
+        
+        var i = Int()
+        
+        if mode == 0 {
+            //            print("not searching")
+            i = 0
+            if Globals.locals.archives == nil {
+                print("ERROR: No 'archives' object to populate table cells")
+            } else {
+                for item in Globals.locals.archives {
+                    if i == indexPath.row {
+                        cell.titleLabel.text = item.title!
+                        cell.subtitleLabel.text = item.subtitle! // some of these are empty strings
+                        
+                        let index = item.airDate!.index(item.airDate!.startIndex, offsetBy: 10)
+                        let substring = item.airDate!.substring(to: index)
+                        cell.timeLabel.text = substring // timeLabel is a deceptive label but oh well
+                        
+                        self.nidVar = item.url! // use this to render the video
+                    }
+                    i += 1
                 }
-                i += 1
+            }
+        } else if mode == 1 {
+//                        print("searching")
+            i = 0
+            self.repository.SearchArchives(search: searchText){
+                (archives, error) in
+//                print(archives)
+                for item in archives.archives {
+                    if i == indexPath.row {
+                        cell.titleLabel.text = item.title!
+                        cell.subtitleLabel.text = item.subtitle! // some of these are empty strings
+                        
+                        let index = item.airDate!.index(item.airDate!.startIndex, offsetBy: 10)
+                        let substring = item.airDate!.substring(to: index)
+                        cell.timeLabel.text = substring // timeLabel is a deceptive label but oh well
+                        
+                        self.nidVar = item.url! // use this to render the video
+                    }
+                    i += 1
+                }
             }
         }
-        print(self.nidVar)
+        
         return cell
         
     } // end cellForRowAt
@@ -106,12 +150,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     } // end prepare
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        //
-    }
-    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("searchText:", searchBar.text!)
+        
+        searchText = searchBar.text!
+        
+        self.mode = 1
+        
+        tableArchiveView.reloadData()
+        
     } // end searchBarSearchButtonClicked
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        
+        searchBar.text = ""
+        
+        self.mode = 0
+        
+        tableArchiveView.reloadData()
+        
+    }// end searchBarCancelButtonClicked
     
 } // end class
