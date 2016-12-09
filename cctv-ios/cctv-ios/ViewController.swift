@@ -63,7 +63,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //                (archives, error) in
 //                return archives.archives.count
 //            }
-            i = 10
+            i = 3
         }
         
         return i // determines the number of rows rendered at a time.
@@ -133,10 +133,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else {
             for item in Globals.locals.archives {
                 if i == indexPath.row {
-                    print(item.url!) // comment this mf
-//                    performSegue(withIdentifier: "VideoShowSegue", sender: item.url)
+                    print(item.url!) // why the fuck isn't this updating on search - all the cell videos are sTATIC??!?3 KLJWLFAJS
                     
-                    let videoURL = URL(string:"https://v.cdn.vine.co/r/videos/AA3C120C521177175800441692160_38f2cbd1ffb.1.5.13763579289575020226.mp4")
+                    let videoURL = URL(string:item.url!)
                     
                     if let urlVar = videoURL {
                         self.avPlayer = AVPlayer(url: urlVar)
@@ -154,14 +153,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     } // end didSelectRowAt
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        
-//        if segue.identifier=="VideoShowSegue"{
-//            let s = segue.destination as! VideoController
-//            s.setUrl(sender as! String)
-//        }
-//        
-//    } // end prepare
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
@@ -182,5 +173,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableArchiveView.reloadData()
         
     }// end searchBarCancelButtonClicked
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "Channel 17") {
+            let VC2 : StreamViewController = segue.destination as! StreamViewController
+            VC2.receivedChannel = 0
+            
+        }
+        if (segue.identifier == "Channel 317") {
+            let VC2 : StreamViewController = segue.destination as! StreamViewController
+            VC2.receivedChannel = 1
+        }
+    }
     
 } // end class
