@@ -23,6 +23,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableArchiveView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
+    let avPlayerController = AVPlayerViewController()
+    var avPlayer: AVPlayer?
+    
     var nidVar = String()
     var searchText = String()
     var mode = Double()
@@ -101,7 +104,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else if mode == 1 {
             self.repository.SearchArchives(search: searchText){
                 (archives, error) in
-//                print(archives)
                 for item in archives.archives {
                     if i == indexPath.row {
                         cell.titleLabel.text = item.title!
@@ -132,7 +134,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             for item in Globals.locals.archives {
                 if i == indexPath.row {
                     print(item.url!) // comment this mf
-                    performSegue(withIdentifier: "VideoShowSegue", sender: item.url)
+//                    performSegue(withIdentifier: "VideoShowSegue", sender: item.url)
+                    
+                    let videoURL = URL(string:"https://v.cdn.vine.co/r/videos/AA3C120C521177175800441692160_38f2cbd1ffb.1.5.13763579289575020226.mp4")
+                    
+                    if let urlVar = videoURL {
+                        self.avPlayer = AVPlayer(url: urlVar)
+                        self.avPlayerController.player = self.avPlayer
+                    }
+                    
+                    self.present(self.avPlayerController, animated: true) { ()
+                        -> Void in self.avPlayerController.player?.play()
+                    }
+                    
                 }
                 i += 1
             }
@@ -140,14 +154,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     } // end didSelectRowAt
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier=="VideoShowSegue"{
-            let s = segue.destination as! VideoController
-            s.setUrl(sender as! String)
-        }
-        
-    } // end prepare
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        
+//        if segue.identifier=="VideoShowSegue"{
+//            let s = segue.destination as! VideoController
+//            s.setUrl(sender as! String)
+//        }
+//        
+//    } // end prepare
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
