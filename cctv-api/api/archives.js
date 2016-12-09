@@ -15,7 +15,7 @@ router.get("/archives", function (req, res, next) {
 
 router.post("/archives", function (req, res, next) {
     var search = req.body.search.replace(/[^a-zA-Z ]/g, "")
-    var regex = new RegExp("^" + search, 'i')
+    var regex = new RegExp(search, 'i')
 
     var query = Archive.find({
         $or:
