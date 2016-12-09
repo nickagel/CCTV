@@ -9,7 +9,8 @@
 import Foundation
 import EVReflection
 class Archive: EVObject{
-    var nid: String?
+    var url: String?
+    var thumbnail: String?
     var title: String?
     var subtitle: String?
     var airDate: String?
