@@ -14,6 +14,8 @@
 
 import UIKit
 import EVReflection
+import AVKit
+import AVFoundation
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     let repository = RepositoryRetrieval()
@@ -46,23 +48,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        var rows = Int()
-        var j = 0
+        var i = Int()
         
         if mode == 0 {
             
-            return 10
+            i = 10
             
         } else if mode == 1 {
     
-            self.repository.SearchArchives(search: searchText){
-                (archives, error) in
-                return archives.archives.count
-            }
-//            return j
+//            self.repository.SearchArchives(search: searchText){
+//                (archives, error) in
+//                return archives.archives.count
+//            }
+            i = 10
         }
         
-        return 10 // determines the number of rows rendered at a time.
+        return i // determines the number of rows rendered at a time.
         
     } // end numberOfRowsInSection
     
@@ -76,11 +77,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         //print(Globals.locals.archives)
         
-        var i = Int()
+        var i = 0
         
         if mode == 0 {
             //            print("not searching")
-            i = 0
             if Globals.locals.archives == nil {
                 print("ERROR: No 'archives' object to populate table cells")
             } else {
@@ -99,8 +99,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 }
             }
         } else if mode == 1 {
-//                        print("searching")
-            i = 0
             self.repository.SearchArchives(search: searchText){
                 (archives, error) in
 //                print(archives)
@@ -114,12 +112,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         cell.timeLabel.text = substring // timeLabel is a deceptive label but oh well
                         
                         self.nidVar = item.url! // use this to render the video
+                    
                     }
                     i += 1
                 }
             }
         }
-        
+        // on search, the cell updates are slow
         return cell
         
     } // end cellForRowAt
