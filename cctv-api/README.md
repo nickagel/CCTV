@@ -23,6 +23,9 @@ config.json
 }
 ```
 
+### Production
+Deplay node in production follow this [documentation] provided by Digital Ocean
+
 ### Schemas
 
 archive
@@ -41,16 +44,26 @@ schedules
 {
     "date": date as string, (ex: 2016-12-06)
     "channel317": [
-        "title": String,
-        "startTime": String, (ex: 02:15)
-        "endTime": String, (ex: 15:15)
-        "ch_type": String
+        {
+            "title": String,
+            "startTime": String, (ex: 02:15)
+            "endTime": String, (ex: 15:15)
+            "ch_type": String
+        }
+        .
+        .
+        .
     ],
     "channel17": [
-        "title": String,
-        "startTime": String, (ex: 02:15)
-        "endTime": String, (ex: 15:15)
-        "ch_type": String
+        {
+            "title": String,
+            "startTime": String, (ex: 02:15)
+            "endTime": String, (ex: 15:15)
+            "ch_type": String
+        }
+        .
+        .
+        .
     ]
 }
 ```
@@ -81,3 +94,4 @@ CCTV uses a number of open source projects to work properly:
    [Moment Timezone]: <https://www.npmjs.com/package/moment-timezone>
    [MongoDb]: <https://www.npmjs.com/package/mongodb>
    [mongoose]: <http://mongoosejs.com/index.html>
+   [documentation]: <https://www.digitalocean.com/community/tutorials/how-to-deploy-node-js-applications-using-systemd-and-nginx>
