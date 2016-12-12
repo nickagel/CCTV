@@ -26,9 +26,9 @@ config.json
 ### Production
 Deplay node in production follow this [documentation] provided by Digital Ocean
 
-### Schemas
+### Collection Schemas
 
-archive
+archives
 ```sh
 {
     "url": String,
@@ -68,7 +68,7 @@ schedules
 }
 ```
 
-uri
+uris
 ```sh
 {
     "title": String,
