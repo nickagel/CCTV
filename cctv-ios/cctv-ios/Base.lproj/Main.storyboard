@@ -50,7 +50,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Channel 17"/>
                                 <connections>
-                                    <segue destination="3Yc-o7-9bp" kind="show" identifier="Channel 17" id="aaR-CX-EQu"/>
+                                    <action selector="channel17Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERV-Gn-i8f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8h-kI-crI">
@@ -58,7 +58,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Channel 317"/>
                                 <connections>
-                                    <segue destination="3Yc-o7-9bp" kind="show" identifier="Channel 317" id="6oR-pE-TV2"/>
+                                    <action selector="channel317Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oSa-1f-yVC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwB-va-pq6">
@@ -337,8 +337,5 @@
         <image name="Schedule" width="548" height="105"/>
         <image name="Vermont" width="258" height="518"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="aaR-CX-EQu"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.94509803920000002" green="0.61568627450000002" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
 </document>

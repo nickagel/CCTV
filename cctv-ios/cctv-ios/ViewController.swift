@@ -23,6 +23,36 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableArchiveView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
+    @IBAction func channel17Button(_ sender: Any) {
+        var videoURL = URL(string:"")
+        
+        videoURL = URL(string:"https://stream4.cctv.org:443/live/_definst_/mp4:cctv317.stream/playlist.m3u8")
+        
+        if let urlVar = videoURL {
+            self.avPlayer = AVPlayer(url: urlVar)
+            self.avPlayerController.player = self.avPlayer
+        }
+        
+        self.present(self.avPlayerController, animated: true) { ()
+            -> Void in self.avPlayerController.player?.play()
+        }
+    }
+    
+    @IBAction func channel317Button(_ sender: Any) {
+        var videoURL = URL(string:"")
+        
+        videoURL = URL(string:"https://stream4.cctv.org:443/live/_definst_/mp4:cctv17.stream/playlist.m3u8")
+        
+        if let urlVar = videoURL {
+            self.avPlayer = AVPlayer(url: urlVar)
+            self.avPlayerController.player = self.avPlayer
+        }
+        
+        self.present(self.avPlayerController, animated: true) { ()
+            -> Void in self.avPlayerController.player?.play()
+        }
+    }
+    
     let avPlayerController = AVPlayerViewController()
     var avPlayer: AVPlayer?
     

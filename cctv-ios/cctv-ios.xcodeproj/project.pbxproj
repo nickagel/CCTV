@@ -22,7 +22,6 @@
 		963BA2251DF86140005C9EDA /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963BA2241DF86140005C9EDA /* ScheduleViewController.swift */; };
 		96473CBD1DF52F5800B1C4EB /* ArchiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96473CBC1DF52F5800B1C4EB /* ArchiveTableViewCell.swift */; };
 		968EDA251DEB7D2E0075B842 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968EDA241DEB7D2E0075B842 /* MediaPlayer.framework */; };
-		969C3A761E00921000F3B65A /* Streams.plist in Resources */ = {isa = PBXBuildFile; fileRef = 969C3A751E00921000F3B65A /* Streams.plist */; };
 		A744BBB41DF7B7B100495E8A /* RepositoryRetrieval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBB31DF7B7B100495E8A /* RepositoryRetrieval.swift */; };
 		A744BBB81DF7F0BB00495E8A /* ArchivesFound.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBB71DF7F0BB00495E8A /* ArchivesFound.swift */; };
 		A744BBBC1DF8034F00495E8A /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744BBBB1DF8034F00495E8A /* Globals.swift */; };
@@ -77,7 +76,6 @@
 		963BA2241DF86140005C9EDA /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		96473CBC1DF52F5800B1C4EB /* ArchiveTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveTableViewCell.swift; sourceTree = "<group>"; };
 		968EDA241DEB7D2E0075B842 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		969C3A751E00921000F3B65A /* Streams.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Streams.plist; sourceTree = "<group>"; };
 		A744BBB31DF7B7B100495E8A /* RepositoryRetrieval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryRetrieval.swift; sourceTree = "<group>"; };
 		A744BBB71DF7F0BB00495E8A /* ArchivesFound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchivesFound.swift; sourceTree = "<group>"; };
 		A744BBBB1DF8034F00495E8A /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 				3FBB972A1DD9038600537C32 /* AppDelegate.swift */,
 				3FBB972C1DD9038600537C32 /* ViewController.swift */,
 				963BA2241DF86140005C9EDA /* ScheduleViewController.swift */,
-				969C3A751E00921000F3B65A /* Streams.plist */,
 				960BFC871DFB0BD600CEC150 /* StreamViewController.swift */,
 				3FBB972E1DD9038600537C32 /* Main.storyboard */,
 				3FBB97331DD9038600537C32 /* LaunchScreen.storyboard */,
@@ -344,7 +341,6 @@
 			files = (
 				3FBB97351DD9038600537C32 /* LaunchScreen.storyboard in Resources */,
 				3FBB97321DD9038600537C32 /* Assets.xcassets in Resources */,
-				969C3A761E00921000F3B65A /* Streams.plist in Resources */,
 				3FBB97301DD9038600537C32 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
