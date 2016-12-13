@@ -10,10 +10,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.hambrooks.ccvt.DisplayCh17Activity">
 
+    <VideoView
+        android:id="@+id/myVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" />
+
 </RelativeLayout>
 
-    <!--<VideoView-->
-    <!--android:id="@+id/myVideo"-->
-    <!--android:layout_width="fill_parent"-->
-    <!--android:layout_height="fill_parent"-->
-    <!--android:layout_centerInParent="true" />-->

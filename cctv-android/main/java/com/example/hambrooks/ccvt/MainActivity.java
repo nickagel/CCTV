@@ -3,19 +3,35 @@ package com.example.hambrooks.ccvt;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.*;
 import android.view.View;
-import android.widget.EditText;
-import android.net.Uri;
-import android.widget.MediaController;
-import android.widget.VideoView;
+import java.net.*;
+import java.io.*;
+import android.util.*;
+import java.lang.String;
+import android.widget.*;
 
 public class MainActivity extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "com.example.CCVT.MESSAGE";
-    @Override
+    //String x = "";
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        try {
+//            URL url = new URL("http://www.android.com/");
+//            HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+//            Scanner in = new Scanner(urlConnection.getInputStream());
+//            while(in.hasNext()){
+//                x+=(in.next());
+//                x+= "; ";
+//            }
+//
+//        }catch (Exception e) {
+//            e.printStackTrace();
+//        } finally {
+//            //urlConnection.disconnect();
+//        }
     }
 
     public void sendToCh17(View view) {
@@ -42,3 +58,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 }
+/* upon load of app: call localhost port 3000, (3000 changes vbased on where the app is actually hosted
+load variables:
+make restful call to the api, api returns info uri's archives , schedules.
+anoter get for search
+
+-get json bject
+-make global variables
+-click on 17
+-render a live stream
+ */
