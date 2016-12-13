@@ -10,8 +10,8 @@ Install the dependencies to build application.
 $ cd CCTV/cctv-ios
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ sudo gem install cocoapods
-pod install
-open cctv-ios
+$ pod install
+$ open cctv-ios
 --> double click on cctv-ios.xcworkspace
 ```
 
