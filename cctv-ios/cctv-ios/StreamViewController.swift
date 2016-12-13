@@ -27,13 +27,13 @@ class StreamViewController: UIViewController {
         if self.receivedChannel == 0 {
             //print("17")
             self.channelLabel.text = "Channel 17"
-            videoURL = URL(string:"https://media2.cctv.org/cctv/library/2016/11/JudgeBenHighwayFatalities_F_11172016/JudgeBenHighwayFatalities_F_11172016.broadband.mp4")
+            videoURL = URL(string:"https://stream4.cctv.org:443/live/_definst_/mp4:cctv17.stream/playlist.m3u8")
         } else if self.receivedChannel == 1 {
             //print("317")
             self.channelLabel.text = "Channel 317"
-            videoURL = URL(string:"https://media2.cctv.org/cctv/library/2016/09/InTheWorldOfWinooskiScouts_F_09292016/InTheWorldOfWinooskiScouts_F_09292016.broadband.mp4")
+            videoURL = URL(string:"https://stream4.cctv.org:443/live/_definst_/mp4:cctv317.stream/playlist.m3u8")
         } else {
-            videoURL = URL(string:"https://media2.cctv.org/cctv/library/2016/09/InTheWorldOfWinooskiScouts_F_09292016/InTheWorldOfWinooskiScouts_F_09292016.broadband.mp4")
+            videoURL = URL(string:"https://stream4.cctv.org:443/live/_definst_/mp4:cctv317.stream/playlist.m3u8")
         }
         
         if let urlVar = videoURL {
