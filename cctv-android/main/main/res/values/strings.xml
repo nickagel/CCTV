@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CCTV</string>
+    <string name="button_ch17">17</string>
+    <string name="button_ch317">317</string>
+    <string name="button_archives">Archives</string>
+    <string name="button_schedules">Schedule</string>
+
+    <string name="button_ostschedule">Channel 117</string>
+    <string name="button_tstschedule">Channel 317</string>
+    <string name="title_activity_display117_schedule">Display17Schedule</string>
+    <string name="title_activity_display317_schedule">Display317Schedule</string>
+
+
+    <!--  <string name="button_backHomeF17">Back</string>
+    <string name="button_backHomeF317">Back</string>
+    <string name="button_backHomeFa">Back</string>
+    <string name="button_backHomeFs">Back</string>-->
+
+</resources>
